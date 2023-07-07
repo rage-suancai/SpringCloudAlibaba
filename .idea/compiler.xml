@@ -7,8 +7,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="book-service" />
         <module name="user-service" />
+        <module name="book-service" />
+        <module name="commons" />
         <module name="borrow-service" />
       </profile>
     </annotationProcessing>
@@ -21,6 +22,7 @@
       <module name="SpringCloudStudy" options="" />
       <module name="book-service" options="-parameters" />
       <module name="borrow-service" options="-parameters" />
+      <module name="commons" options="-parameters" />
       <module name="untitled" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>

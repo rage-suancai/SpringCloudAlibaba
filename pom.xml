@@ -20,6 +20,7 @@
         <module>user-service</module>
         <module>book-service</module>
         <module>borrow-service</module>
+        <module>commons</module>
     </modules>
 
     <properties>
