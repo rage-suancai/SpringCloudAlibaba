@@ -14,11 +14,14 @@ public class UserController {
     @Resource
     private UserService userService;
 
+    private int userCallCount = 0;
+
     @GetMapping("/api/user/{uid}")
     public User findUserById(@PathVariable("uid") Integer uid) {
+
+        int count = userCallCount++; System.err.println("调用了用户服务" + count + "次");
         return userService.getUserById(uid);
+
     }
-
-
 
 }
