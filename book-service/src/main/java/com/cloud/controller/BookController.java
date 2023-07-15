@@ -14,9 +14,14 @@ public class BookController {
     @Resource
     private BookService bookService;
 
+    private int BookCount = 0;
+
     @GetMapping("/api/book/{bid}")
     public Book findBookById(@PathVariable Integer bid) {
+
+        int count = BookCount++; System.err.println("调用图书服务" + count + "次");
         return bookService.getBookById(bid);
+
     }
 
 }

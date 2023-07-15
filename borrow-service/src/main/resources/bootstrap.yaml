@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: borrow-service
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml
+        server-addr: localhost:8848
+
+

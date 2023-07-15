@@ -13,12 +13,14 @@ public class BorrowController {
 
     @Resource
     private BorrowService borrowService;
+    private int BorrowCount = 0;
 
     @GetMapping("/api/borrow/{uid}")
     public UserBorrowDetail getUserBorrowDetailByUid(@PathVariable("uid") Integer uid) {
+
+        int count = BorrowCount++; System.err.println("调用了借阅服务" + count + "次");
         return borrowService.getUserBorrowDetailByUid(uid);
+
     }
-
-
 
 }
