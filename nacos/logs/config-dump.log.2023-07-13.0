@@ -1,0 +1,12 @@
+2023-07-13 19:34:24,781 INFO [dump-task] add task. groupKey=user-service-dev.yaml+DEFAULT_GROUP, taskKey=user-service-dev.yaml+DEFAULT_GROUP++false+null
+
+2023-07-13 19:57:53,616 INFO [dump-task] add task. groupKey=book-service.dev.yaml+DEFAULT_GROUP, taskKey=book-service.dev.yaml+DEFAULT_GROUP++false+null
+
+2023-07-13 20:02:04,794 INFO [dump-task] add task. groupKey=book-service.dev.yaml+DEFAULT_GROUP, taskKey=book-service.dev.yaml+DEFAULT_GROUP++false+null
+
+2023-07-13 21:09:56,719 INFO [dump-task] add task. groupKey=book-service-dev.yaml+DEFAULT_GROUP, taskKey=book-service-dev.yaml+DEFAULT_GROUP++false+null
+
+2023-07-13 21:14:13,316 INFO [dump-task] add task. groupKey=borrow-service-dev.yaml+DEFAULT_GROUP, taskKey=borrow-service-dev.yaml+DEFAULT_GROUP++false+null
+
+2023-07-13 21:51:50,947 INFO [dump-task] add task. groupKey=user-service-dev.yaml+DEFAULT_GROUP, taskKey=user-service-dev.yaml+DEFAULT_GROUP++false+null
+

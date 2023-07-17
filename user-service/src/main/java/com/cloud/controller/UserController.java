@@ -2,12 +2,14 @@ package com.cloud.controller;
 
 import com.cloud.service.UserService;
 import com.entity.User;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 
+@RefreshScope
 @RestController
 public class UserController {
 

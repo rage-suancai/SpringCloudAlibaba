@@ -1,5 +1,7 @@
 package com.cloud.service.impl;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
+import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.cloud.dto.UserBorrowDetail;
 import com.cloud.mapper.BorrowMapper;
 import com.cloud.service.client.BookClient;
@@ -11,6 +13,7 @@ import com.entity.User;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -24,6 +27,8 @@ public class BorrowServiceImpl implements BorrowService {
     @Resource
     private BookClient bookClient;
 
+    // @SentinelResource("getBorrow")
+    @SentinelResource(value = "getBorrow", blockHandler = "blocked")
     @Override
     public UserBorrowDetail getUserBorrowDetailByUid(Integer uid) {
 
@@ -36,7 +41,8 @@ public class BorrowServiceImpl implements BorrowService {
         return new UserBorrowDetail(user, bookList);
 
     }
-
-
+    public UserBorrowDetail blocked(Integer uid, BlockException e) {
+        return new UserBorrowDetail(null, Collections.emptyList());
+    }
 
 }
