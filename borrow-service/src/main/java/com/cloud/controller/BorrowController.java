@@ -1,15 +1,17 @@
 package com.cloud.controller;
 
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
+import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.cloud.dto.UserBorrowDetail;
 import com.cloud.service.BorrowService;
+import com.entity.User;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import java.util.Collections;
 
 @RefreshScope
 @RestController
@@ -35,11 +37,21 @@ public class BorrowController {
 
     }*/
 
+    /*@GetMapping("/api/borrow2/{uid}")
+    public UserBorrowDetail getUserBorrowDetailByUid2(@PathVariable("uid") Integer uid)  {
+
+        // TimeUnit.SECONDS.sleep(1); return borrowService.getUserBorrowDetailByUid(uid);
+        throw new RuntimeException();
+
+    }*/
+
     @GetMapping("/api/borrow2/{uid}")
-    public UserBorrowDetail getUserBorrowDetailByUid2() {
-
-
-
+    @SentinelResource(value = "findUserBorrows", blockHandler = "blocked")
+    public UserBorrowDetail getUserBorrowDetailByUid2(@PathVariable("uid") Integer uid) {
+        throw new RuntimeException();
+    }
+    public UserBorrowDetail blocked(Integer uid, BlockException e) {
+        return new UserBorrowDetail(new User(), Collections.emptyList());
     }
 
     /*@GetMapping("/blocked")
@@ -66,12 +78,12 @@ public class BorrowController {
         return "被限流了";
     }*/
 
-    @GetMapping("/blocked")
+    /*@GetMapping("/blocked")
     @SentinelResource(value = "blocked")
     public String findUserBorrows(@RequestParam(value = "a", required = false) Integer a,
                                   @RequestParam(value = "b", required = false) Integer b,
                                   @RequestParam(value = "c", required = false) Integer c) {
         return "请求成功! a = " + a + ", b = " + b + ", c = " + c;
-    }
+    }*/
 
 }

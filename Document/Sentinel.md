@@ -363,7 +363,7 @@ getUserBorrowDetailByUid这个方法都会被限流 注意限流的形式是后�
 
 而我们使用其他参数或是不带a参数 那么就不会出现这种问题了:
 
-<img src="https://fast.itbaima.net/2023/03/06/WVguflyZ43NxE7j.png">
+<img src="https://fast.itbaima.net/2023/03/06/WVguflyZ43NxE7j.png"/>
 
 除了直接对某个参数精准限流外 我们还可以对参数携带的指定值单独设定阈值 比如我们现在不仅希望对参数a限流 而且还希望当参数a的值为10时 QPS达到5再进行限流 那么就可以设定例外:
 
@@ -385,7 +385,7 @@ getUserBorrowDetailByUid这个方法都会被限流 注意限流的形式是后�
    线程池隔离实际上就是对每个服务的远程调用单独开放线程池 比如服务A要调用服务B 那么只基于固定数量的线程池
    这样即使在短时间内出现大量请求 由于没有线程可以分配 所以就不会导致资源耗尽了
 
-   <img src="https://fast.itbaima.net/2023/03/06/CbYxA3d7w46OlMm.png">
+   <img src="https://fast.itbaima.net/2023/03/06/CbYxA3d7w46OlMm.png"/>
 
 
 2. `信号量隔离`
@@ -397,7 +397,7 @@ getUserBorrowDetailByUid这个方法都会被限流 注意限流的形式是后�
 
 好了 说回我们的熔断和降级 当下游服务因为某种原因变得不可用或响应过慢时 上游服务为了保证自己整体服务的可用性 不再继续调用目标服务而是快速返回或是执行自己的替代方案 这便是服务降级
 
-<img src="https://fast.itbaima.net/2023/03/06/gY62LD3vw157WiU.png">
+<img src="https://fast.itbaima.net/2023/03/06/gY62LD3vw157WiU.png"/>
 
 整个过程分为三个状态:
 - 关闭: 熔断器不工作 所有请求全部该干嘛干嘛
@@ -406,13 +406,13 @@ getUserBorrowDetailByUid这个方法都会被限流 注意限流的形式是后�
 
 那么我们来看看Sentinel中如何进行熔断和降级操作 打开管理页面 我们可以自由新增熔断规则:
 
-<img src="https://fast.itbaima.net/2023/03/06/7BW6LGXQNl5b1Iv.png">
+<img src="https://fast.itbaima.net/2023/03/06/7BW6LGXQNl5b1Iv.png"/>
 
 其中 熔断策略有三种模式:
 
 1. `慢调用比例`: 
     如果出现那种半天都处理不完的调用 有可能就是服务出现故障 导致卡顿 这个选项是按照最大响应时间(RT)进行判定 如果一次请求的处理时间超过了指定的RT 那么就被判定为慢调用
-   在一个统计时长内 如果请求数目大于最小请求数目 并且被判定为慢调用的请求比例已经超过阀值 将触发熔断 经过熔断时长之后 将会进入到半开状态进行试探(这里和Hystrix一致)
+    在一个统计时长内 如果请求数目大于最小请求数目 并且被判定为慢调用的请求比例已经超过阀值 将触发熔断 经过熔断时长之后 将会进入到半开状态进行试探(这里和Hystrix一致)
 
     然后修改一下接口的执行 我们模拟一下慢调用:
 
@@ -423,22 +423,105 @@ getUserBorrowDetailByUid这个方法都会被限流 注意限流的形式是后�
                     }
     ```
 
+    重启 然后我们创建一个新的熔断规则:
+
+    <img src="https://fast.itbaima.net/2023/03/06/ExWIKFSNpPoksiT.png"/>
+
+    可以看到 超时直接触发了熔断 进入到阻止页面:
+
+    <img src="https://fast.itbaima.net/2023/03/06/CmdPgcqvX4a2u9p.png"/>
+
+
+2. `异常比例`
+    这个与慢调用比例类似 不过这里判断的是出现异常的次数 与上面一样 我们也来进行一些小测试:
+
+                    @GetMapping("/borrow2/{uid}")
+                    public UserBorrowDetail findUserBorrows2(@PathVariable("uid") Integer uid) {
+                        throw new RuntimeException();
+                    }
+
+    启动服务器 接着添加我们到达熔断规则:
+
+    <img src="https://fast.itbaima.net/2023/03/06/Dz3EgG9eH4UXTkJ.png"/>
+
+    现在我们进行访问 会发现后台疯狂报错 然后就熔断了:
+
+    <img src="https://fast.itbaima.net/2023/03/06/jSp92ODTRhlxJsn.png"/>
+
+    <img src="https://fast.itbaima.net/2023/03/06/FfhalnZdS2ujm1t.png"/>
+
+
+3. `异常数`
+    这个和上面的唯一区别就是 只要达到指定的异常数量 就熔断 这里我们修改一下熔断规则:
+
+    <img src="https://fast.itbaima.net/2023/03/06/CugOUozGA6inB3R.png"/>
+
+    现在我们再次不断访问此接口 可以发现 效果跟之前其实是差不多的 只是判断的策略稍微不同罢了:
+
+    <img src="https://fast.itbaima.net/2023/03/06/XC1VekDfainIpv6.png"/>
+
+那么熔断规则如何设定我们了解了 那么 如何自定义服务降级呢? 之前在使用Hystrix的时候 如果出现异常 可以执行我们的替代方案 Sentinel也是可以的
+
+同样的 我们只需要在@SentinelResource中配置blockHandler参数(那这里跟前面那个方法限流的配置不是一毛一样吗? 没错 因为如果添加了@SentinelResource注解
+那么这里会进行方法级别细粒度的限制 和之前方法级别限流一样 会在降级之后直接抛出异常 如果不添加则返回默认的限流页面 blockHandler的目的就是处理这种Sentinel机制
+所以这里其实和之前的限流配置是一个道理 因此下面熔断配置也应该对value自定义名称的资源进行配置 才能作用到此方法上):
+
+```java
+                    @RequestMapping("/borrow2/{uid}")
+                    @SentinelResource(value = "findUserBorrows2", blockHandler = "test")
+                    UserBorrowDetail findUserBorrows2(@PathVariable("uid") int uid) {
+                        throw new RuntimeException();
+                    }
+                    
+                    UserBorrowDetail test(int uid, BlockException e){
+                        return new UserBorrowDetail(new User(), Collections.emptyList());
+                    }
+```
+
+接着我们对进行熔断配置 注意是对我们添加的@SentinelResource中指定名称的findUserBorrows2进行配置:
+
+<img src="https://fast.itbaima.net/2023/03/06/QkofY5gzwSr6WGn.png"/>
+
+OK 可以看到熔断之后 服务降级之后的效果:
+
+<img src="https://fast.itbaima.net/2023/03/06/5kLcAaT6wJgYXGx.png"/>
+
+最后我们来看一下如何让Feign的也支持Sentinel 前面我们使用Hystrix的时候 就可以直接对Feign的每个接口调用单独进行服务降级 而使用Sentinel 也是可以的 首先我们需要在配置文件中开启支持:
 
 
 
+之后的步骤其实和之前是一模一样的 首先创建实现类:
 
+```java
+                    @Component
+                    public class UserClientFallback implements UserClient {
 
+                        @Override
+                        public User getUserById(int uid) {
 
+                            User user = new User();
+                            user.setName("我是替代方案");
+                            return user;
 
+                        }
 
+                    }
+```
 
+然后直接启动就可以了 中途的时候我们吧用户服务全部下掉 可以看到正常使用替代方案:
 
+<img src="https://fast.itbaima.net/2023/03/06/M2yZpJLfs1i9adC.png"/>
 
+这样Feign的配置就OK了 那么传统的RestTemplate呢? 我们可以使用@SentinelRestTemplate注解实现:
 
+```java
+                      @Bean
+                      @LoadBalanced
+                      @SentinelRestTemplate(blockHandler = "handleException", blockHandlerClass = ExceptionUtil.class,
+                           fallback = "fallback", fallbackClass = ExceptionUtil.class) // 这里同样可以设定fallback等参数
+                      public RestTemplate restTemplate() {
+                            return new RestTemplate();
+                      }
+```
 
-
-
-
-
-
-
+这里就不多做赘述了

@@ -28,7 +28,7 @@ public class BorrowServiceImpl implements BorrowService {
     private BookClient bookClient;
 
     // @SentinelResource("getBorrow")
-    @SentinelResource(value = "getBorrow", blockHandler = "blocked")
+    // @SentinelResource(value = "getBorrow", blockHandler = "blocked")
     @Override
     public UserBorrowDetail getUserBorrowDetailByUid(Integer uid) {
 

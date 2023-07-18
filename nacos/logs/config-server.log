@@ -80,3 +80,9 @@
 
 2023-07-17 16:51:57,402 WARN clear all config-info-tag-tenant failed.
 
+2023-07-17 17:24:28,018 WARN Get client info from 192.168.149.1:8848 with exception: Connect timed out
+
+2023-07-17 17:27:54,947 WARN Get client info from 192.168.149.1:8848 with exception: Connect timed out
+
+2023-07-17 17:46:49,552 WARN Get client info from 192.168.149.1:8848 with exception: Connect timed out
+
