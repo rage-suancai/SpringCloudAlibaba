@@ -26,4 +26,17 @@ public class UserController {
 
     }
 
+    @GetMapping("/api/user/remain/{uid}")
+    public Integer userRemain(@PathVariable("uid") Integer uid) {
+        return userService.getRemain(uid);
+    }
+
+    @GetMapping("/api/user/borrow/{uid}")
+    public boolean userBorrow(@PathVariable("uid") Integer uid) {
+
+        int remain = userService.getRemain(uid);
+        return userService.setRemain(uid, remain - 1);
+
+    }
+
 }

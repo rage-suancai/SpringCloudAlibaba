@@ -26,4 +26,17 @@ public class BookController {
 
     }
 
+    @GetMapping("/api/book/remain/{bid}")
+    public Integer bookRemain(@PathVariable("bid") Integer bid) {
+        return bookService.getRemain(bid);
+    }
+
+    @GetMapping("/api/book/borrow/{bid}")
+    public boolean bookBorrow(@PathVariable("bid") Integer bid) {
+
+        int remain = bookService.getRemain(bid);
+        return bookService.setRemain(bid, remain - 1);
+
+    }
+
 }

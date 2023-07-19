@@ -1,19 +1,16 @@
 package com.cloud.service.impl;
 
-import com.alibaba.csp.sentinel.annotation.SentinelResource;
-import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.cloud.dto.UserBorrowDetail;
 import com.cloud.mapper.BorrowMapper;
+import com.cloud.service.BorrowService;
 import com.cloud.service.client.BookClient;
 import com.cloud.service.client.UserClient;
-import com.cloud.service.BorrowService;
 import com.entity.Book;
 import com.entity.Borrow;
 import com.entity.User;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -41,8 +38,22 @@ public class BorrowServiceImpl implements BorrowService {
         return new UserBorrowDetail(user, bookList);
 
     }
-    public UserBorrowDetail blocked(Integer uid, BlockException e) {
-        return new UserBorrowDetail(null, Collections.emptyList());
+
+    @Override
+    public boolean doBorrow(Integer uid, Integer bid) {
+
+        if (bookClient.bookRemain(bid) < 1) throw new RuntimeException("图书数量不足");
+        if (userClient.userRemain(uid) < 1) throw new RuntimeException("用户借阅额度不足");
+        if (!bookClient.bookBorrow(bid)) throw new RuntimeException("借阅图书时出现错误");
+        if (borrowMapper.getBorrow(uid, bid) != null) throw new RuntimeException("此书籍已经被此用户借阅了");
+        if (borrowMapper.addBorrow(uid, bid) <= 0) throw new RuntimeException("录入借阅信息时出现错误");
+        if (!userClient.userBorrow(uid)) throw new RuntimeException("借阅时出现错误");
+        return true;
+
     }
+
+    /*public UserBorrowDetail blocked(Integer uid, BlockException e) {
+        return new UserBorrowDetail(null, Collections.emptyList());
+    }*/
 
 }

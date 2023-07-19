@@ -488,7 +488,11 @@ OK 可以看到熔断之后 服务降级之后的效果:
 
 最后我们来看一下如何让Feign的也支持Sentinel 前面我们使用Hystrix的时候 就可以直接对Feign的每个接口调用单独进行服务降级 而使用Sentinel 也是可以的 首先我们需要在配置文件中开启支持:
 
-
+```yaml
+                    feign:
+                      sentinel:
+                        enabled: true
+```
 
 之后的步骤其实和之前是一模一样的 首先创建实现类:
 

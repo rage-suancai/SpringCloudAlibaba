@@ -6,4 +6,8 @@ public interface BookService {
 
     Book getBookById(Integer bid);
 
+    Integer getRemain(Integer bid);
+
+    boolean setRemain(Integer bid, Integer count);
+
 }

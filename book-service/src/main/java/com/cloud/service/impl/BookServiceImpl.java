@@ -18,4 +18,14 @@ public class BookServiceImpl implements BookService {
         return bookMapper.getBookById(bid);
     }
 
+    @Override
+    public Integer getRemain(Integer bid) {
+        return bookMapper.getRemain(bid);
+    }
+
+    @Override
+    public boolean setRemain(Integer bid, Integer count) {
+        return bookMapper.getRemain(bid) > 0;
+    }
+
 }
