@@ -1,806 +1,506 @@
-2023-07-19 00:51:43,345 INFO Starting Nacos v1.4.3 on Rick-yxs with PID 5848 (D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\target\nacos-server.jar started by AKAtravis-yxs in D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\bin)
+2023-07-21 01:12:56,645 INFO Starting Nacos v1.4.3 on Rick-yxs with PID 9420 (D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\target\nacos-server.jar started by AKAtravis-yxs in D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\bin)
 
-2023-07-19 00:51:43,346 INFO The following profiles are active: standalone
+2023-07-21 01:12:56,646 INFO The following profiles are active: standalone
 
-2023-07-19 00:51:45,514 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@21d8bcbe' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-21 01:12:58,930 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@21d8bcbe' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
-2023-07-19 00:51:45,522 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-21 01:12:58,939 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
-2023-07-19 00:51:46,040 INFO Tomcat initialized with port(s): 8848 (http)
+2023-07-21 01:12:59,434 INFO Tomcat initialized with port(s): 8848 (http)
 
-2023-07-19 00:51:46,071 INFO Starting service [Tomcat]
+2023-07-21 01:12:59,466 INFO Starting service [Tomcat]
 
-2023-07-19 00:51:46,072 INFO Starting Servlet engine: [Apache Tomcat/9.0.38]
+2023-07-21 01:12:59,466 INFO Starting Servlet engine: [Apache Tomcat/9.0.38]
 
-2023-07-19 00:51:46,307 INFO At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-07-21 01:12:59,709 INFO At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
 
-2023-07-19 00:51:46,343 INFO Initializing Spring embedded WebApplicationContext
+2023-07-21 01:12:59,744 INFO Initializing Spring embedded WebApplicationContext
 
-2023-07-19 00:51:46,343 INFO Root WebApplicationContext: initialization completed in 2890 ms
+2023-07-21 01:12:59,744 INFO Root WebApplicationContext: initialization completed in 2992 ms
 
-2023-07-19 00:51:46,740 INFO HikariPool-1 - Starting...
+2023-07-21 01:13:00,137 INFO HikariPool-1 - Starting...
 
-2023-07-19 00:51:46,746 WARN Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2023-07-21 01:13:00,143 WARN Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
 
-2023-07-19 00:51:47,082 INFO HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+2023-07-21 01:13:00,370 INFO HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
 
-2023-07-19 00:51:47,084 INFO HikariPool-1 - Start completed.
+2023-07-21 01:13:00,372 INFO HikariPool-1 - Start completed.
 
-2023-07-19 00:51:47,903 INFO Nacos-related cluster resource initialization
+2023-07-21 01:13:01,091 INFO Nacos-related cluster resource initialization
 
-2023-07-19 00:51:47,916 INFO The cluster resource is initialized
+2023-07-21 01:13:01,130 INFO The cluster resource is initialized
 
-2023-07-19 00:51:48,304 INFO Reflections took 31 ms to scan 1 urls, producing 4 keys and 6 values 
+2023-07-21 01:13:01,561 INFO Reflections took 28 ms to scan 1 urls, producing 4 keys and 6 values 
 
-2023-07-19 00:51:48,327 INFO Reflections took 4 ms to scan 1 urls, producing 6 keys and 26 values 
+2023-07-21 01:13:01,582 INFO Reflections took 4 ms to scan 1 urls, producing 6 keys and 26 values 
 
-2023-07-19 00:51:48,340 INFO Reflections took 3 ms to scan 1 urls, producing 3 keys and 15 values 
+2023-07-21 01:13:01,596 INFO Reflections took 4 ms to scan 1 urls, producing 3 keys and 15 values 
 
-2023-07-19 00:51:48,353 INFO Reflections took 1 ms to scan 1 urls, producing 2 keys and 12 values 
+2023-07-21 01:13:01,610 INFO Reflections took 2 ms to scan 1 urls, producing 2 keys and 12 values 
 
-2023-07-19 00:51:49,039 INFO Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-21 01:13:02,199 INFO Initializing ExecutorService 'applicationTaskExecutor'
 
-2023-07-19 00:51:49,145 INFO Adding welcome page: class path resource [static/index.html]
+2023-07-21 01:13:02,302 INFO Adding welcome page: class path resource [static/index.html]
 
-2023-07-19 00:51:49,428 INFO Creating filter chain: Ant [pattern='/**'], []
+2023-07-21 01:13:02,577 INFO Creating filter chain: Ant [pattern='/**'], []
 
-2023-07-19 00:51:49,452 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@9efcd90, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e9f73b, org.springframework.security.web.header.HeaderWriterFilter@6badba10, org.springframework.security.web.csrf.CsrfFilter@6bcc3f27, org.springframework.security.web.authentication.logout.LogoutFilter@303c55fa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2fd64b11, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76e9f00b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7eb200ce, org.springframework.security.web.session.SessionManagementFilter@594d9f07, org.springframework.security.web.access.ExceptionTranslationFilter@ebe067d]
+2023-07-21 01:13:02,599 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b5de58f, org.springframework.security.web.context.SecurityContextPersistenceFilter@5befbac1, org.springframework.security.web.header.HeaderWriterFilter@3a4ab7f7, org.springframework.security.web.csrf.CsrfFilter@205df5dc, org.springframework.security.web.authentication.logout.LogoutFilter@7c2924d7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a565afb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@688a2c09, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6587305a, org.springframework.security.web.session.SessionManagementFilter@63cf9de0, org.springframework.security.web.access.ExceptionTranslationFilter@7cf78c85]
 
-2023-07-19 00:51:49,511 INFO Initializing ExecutorService 'taskScheduler'
+2023-07-21 01:13:02,651 INFO Initializing ExecutorService 'taskScheduler'
 
-2023-07-19 00:51:49,530 INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-07-21 01:13:02,665 INFO Exposing 2 endpoint(s) beneath base path '/actuator'
 
-2023-07-19 00:51:49,622 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+2023-07-21 01:13:02,741 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
 
-2023-07-19 00:51:49,626 INFO Started Nacos in 7.375 seconds (JVM running for 7.966)
+2023-07-21 01:13:02,744 INFO Started Nacos in 7.208 seconds (JVM running for 7.685)
 
-2023-07-19 00:51:49,626 INFO Nacos started successfully in stand alone mode. use embedded storage
+2023-07-21 01:13:02,744 INFO Nacos started successfully in stand alone mode. use embedded storage
 
-2023-07-19 00:52:54,834 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-21 01:13:16,840 INFO Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
 
-2023-07-19 00:52:54,834 INFO Initializing Servlet 'dispatcherServlet'
-
-2023-07-19 00:52:54,840 INFO Completed initialization in 6 ms
-
-2023-07-19 01:01:48,521 INFO [capacityManagement] start correct usage
-
-2023-07-19 01:01:48,561 INFO [capacityManagement] end correct usage, cost: 0s
-
-2023-07-19 01:01:48,759 WARN clearConfigHistory start
-
-2023-07-19 01:11:48,569 INFO [capacityManagement] start correct usage
-
-2023-07-19 01:11:48,569 INFO [capacityManagement] end correct usage, cost: 0s
-
-2023-07-19 01:11:48,775 WARN clearConfigHistory start
-
-2023-07-19 01:21:48,583 INFO [capacityManagement] start correct usage
-
-2023-07-19 01:21:48,583 INFO [capacityManagement] end correct usage, cost: 0s
-
-2023-07-19 01:21:48,790 WARN clearConfigHistory start
-
-2023-07-19 01:31:48,596 INFO [capacityManagement] start correct usage
-
-2023-07-19 01:31:48,597 INFO [capacityManagement] end correct usage, cost: 0s
-
-2023-07-19 01:31:48,803 WARN clearConfigHistory start
-
-2023-07-19 01:41:48,608 INFO [capacityManagement] start correct usage
-
-2023-07-19 01:41:48,609 INFO [capacityManagement] end correct usage, cost: 0s
-
-2023-07-19 01:41:48,813 WARN clearConfigHistory start
-
-2023-07-19 01:51:48,619 INFO [capacityManagement] start correct usage
-
-2023-07-19 01:51:48,619 INFO [capacityManagement] end correct usage, cost: 0s
-
-2023-07-19 01:51:48,814 WARN clearConfigHistory start
-
-2023-07-19 02:01:48,627 INFO [capacityManagement] start correct usage
-
-2023-07-19 02:01:48,627 INFO [capacityManagement] end correct usage, cost: 0s
-
-2023-07-19 02:01:48,814 WARN clearConfigHistory start
-
-2023-07-19 02:11:48,643 INFO [capacityManagement] start correct usage
-
-2023-07-19 02:11:48,643 INFO [capacityManagement] end correct usage, cost: 0s
-
-2023-07-19 02:11:48,819 WARN clearConfigHistory start
-
-2023-07-19 02:21:48,657 INFO [capacityManagement] start correct usage
-
-2023-07-19 02:21:48,657 INFO [capacityManagement] end correct usage, cost: 0s
-
-2023-07-19 02:21:48,832 WARN clearConfigHistory start
-
-2023-07-19 02:31:48,667 INFO [capacityManagement] start correct usage
-
-2023-07-19 02:31:48,667 INFO [capacityManagement] end correct usage, cost: 0s
-
-2023-07-19 02:31:48,842 WARN clearConfigHistory start
-
-2023-07-19 02:41:48,676 INFO [capacityManagement] start correct usage
-
-2023-07-19 02:41:48,676 INFO [capacityManagement] end correct usage, cost: 0s
-
-2023-07-19 02:41:48,851 WARN clearConfigHistory start
-
-2023-07-19 02:51:48,677 INFO [capacityManagement] start correct usage
-
-2023-07-19 02:51:48,678 INFO [capacityManagement] end correct usage, cost: 0s
-
-2023-07-19 02:51:48,853 WARN clearConfigHistory start
-
-2023-07-19 02:52:08,691 INFO Starting Nacos v1.4.3 on Rick-yxs with PID 7500 (D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\target\nacos-server.jar started by AKAtravis-yxs in D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\bin)
-
-2023-07-19 02:52:08,691 INFO The following profiles are active: standalone
-
-2023-07-19 02:52:10,996 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@72a85671' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-
-2023-07-19 02:52:11,006 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-
-2023-07-19 02:52:11,534 INFO Tomcat initialized with port(s): 8848 (http)
-
-2023-07-19 02:52:11,570 INFO Starting service [Tomcat]
-
-2023-07-19 02:52:11,571 INFO Starting Servlet engine: [Apache Tomcat/9.0.38]
-
-2023-07-19 02:52:11,816 INFO At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-
-2023-07-19 02:52:11,849 INFO Initializing Spring embedded WebApplicationContext
-
-2023-07-19 02:52:11,849 INFO Root WebApplicationContext: initialization completed in 3043 ms
-
-2023-07-19 02:52:12,255 INFO HikariPool-1 - Starting...
-
-2023-07-19 02:52:12,261 WARN Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
-
-2023-07-19 02:52:13,324 ERROR HikariPool-1 - Exception during pool initialization.
-
-java.sql.SQLException: Failed to start database 'D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\data\derby-data' with class loader org.springframework.boot.loader.LaunchedURLClassLoader@1b4fb997, see the next exception for details.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x030xfd["0x0e0xf4<0xd7&q70xf6d0x9e0xe4=0x8a0x82*0xcd0x900x190xd9]0xe70x98E0x020x1a0xa40x9c0xad@]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:413)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:261)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.apache.derby.iapi.error.StandardException: Failed to start database 'D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\data\derby-data' with class loader org.springframework.boot.loader.LaunchedURLClassLoader@1b4fb997, see the next exception for details.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
-	... 15 common frames omitted
-Caused by: org.apache.derby.iapi.error.StandardException: Another instance of Derby may have already booted the database D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\data\derby-data.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
-	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.getJBMSLockOnDB(Unknown Source)
-	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
-	at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
-	at org.apache.derby.impl.store.raw.RawStore$6.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-	at org.apache.derby.impl.store.raw.RawStore.bootServiceModule(Unknown Source)
-	at org.apache.derby.impl.store.raw.RawStore.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
-	at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
-	at org.apache.derby.impl.store.access.RAMAccessManager$5.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-	at org.apache.derby.impl.store.access.RAMAccessManager.bootServiceModule(Unknown Source)
-	at org.apache.derby.impl.store.access.RAMAccessManager.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
-	at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
-	at org.apache.derby.impl.db.BasicDatabase$5.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-	at org.apache.derby.impl.db.BasicDatabase.bootServiceModule(Unknown Source)
-	at org.apache.derby.impl.db.BasicDatabase.bootStore(Unknown Source)
-	at org.apache.derby.impl.db.BasicDatabase.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.startProviderService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
-	... 12 common frames omitted
-2023-07-19 02:52:13,326 ERROR Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'authFilterRegistration' defined in class path resource [com/alibaba/nacos/core/auth/AuthConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.FilterRegistrationBean]: Factory method 'authFilterRegistration' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authFilter': Unsatisfied dependency expressed through field 'authManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthManager': Unsatisfied dependency expressed through field 'authenticationManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'embeddedUserPersistServiceImpl': Unsatisfied dependency expressed through field 'databaseOperate'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'standaloneDatabaseOperateImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: com.alibaba.nacos.api.exception.runtime.NacosRuntimeException: errCode: 500, errMsg: load schema.sql error. 
+2023-07-21 01:13:16,857 INFO Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
 
-2023-07-19 02:52:13,347 INFO Stopping service [Tomcat]
-
-2023-07-19 02:52:13,350 WARN Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
-
-2023-07-19 02:52:13,353 INFO Nacos Log files: D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\logs
-
-2023-07-19 02:52:13,353 INFO Nacos Log files: D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\conf
-
-2023-07-19 02:52:13,354 INFO Nacos Log files: D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\data
-
-2023-07-19 02:52:13,355 ERROR Startup errors : {}
-
-org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:156)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
-	at com.alibaba.nacos.Nacos.main(Nacos.java:35)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
-	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
-	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
-	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:467)
-Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:124)
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
-	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:416)
-	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:180)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:180)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153)
-	... 16 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authFilterRegistration' defined in class path resource [com/alibaba/nacos/core/auth/AuthConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.FilterRegistrationBean]: Factory method 'authFilterRegistration' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authFilter': Unsatisfied dependency expressed through field 'authManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthManager': Unsatisfied dependency expressed through field 'authenticationManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'embeddedUserPersistServiceImpl': Unsatisfied dependency expressed through field 'databaseOperate'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'standaloneDatabaseOperateImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: com.alibaba.nacos.api.exception.runtime.NacosRuntimeException: errCode: 500, errMsg: load schema.sql error. 
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1318)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1158)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:202)
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:96)
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:85)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:253)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:227)
-	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53)
-	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5128)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
-	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
-	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:843)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
-	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
-	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486)
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:105)
-	... 21 common frames omitted
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.FilterRegistrationBean]: Factory method 'authFilterRegistration' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authFilter': Unsatisfied dependency expressed through field 'authManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthManager': Unsatisfied dependency expressed through field 'authenticationManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'embeddedUserPersistServiceImpl': Unsatisfied dependency expressed through field 'databaseOperate'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'standaloneDatabaseOperateImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: com.alibaba.nacos.api.exception.runtime.NacosRuntimeException: errCode: 500, errMsg: load schema.sql error. 
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
-	... 61 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authFilter': Unsatisfied dependency expressed through field 'authManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthManager': Unsatisfied dependency expressed through field 'authenticationManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'embeddedUserPersistServiceImpl': Unsatisfied dependency expressed through field 'databaseOperate'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'standaloneDatabaseOperateImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: com.alibaba.nacos.api.exception.runtime.NacosRuntimeException: errCode: 500, errMsg: load schema.sql error. 
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1402)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:591)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.resolveBeanReference(ConfigurationClassEnhancer.java:394)
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:366)
-	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$c432c92b.authFilter(<generated>)
-	at com.alibaba.nacos.core.auth.AuthConfig.authFilterRegistration(AuthConfig.java:34)
-	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$c432c92b.CGLIB$authFilterRegistration$0(<generated>)
-	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$c432c92b$$FastClassBySpringCGLIB$$39be3f5.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
-	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$c432c92b.authFilterRegistration(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
-	... 62 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthManager': Unsatisfied dependency expressed through field 'authenticationManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'embeddedUserPersistServiceImpl': Unsatisfied dependency expressed through field 'databaseOperate'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'standaloneDatabaseOperateImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: com.alibaba.nacos.api.exception.runtime.NacosRuntimeException: errCode: 500, errMsg: load schema.sql error. 
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1402)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:591)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1276)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
-	... 85 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'embeddedUserPersistServiceImpl': Unsatisfied dependency expressed through field 'databaseOperate'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'standaloneDatabaseOperateImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: com.alibaba.nacos.api.exception.runtime.NacosRuntimeException: errCode: 500, errMsg: load schema.sql error. 
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1402)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:591)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1318)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1158)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1276)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
-	... 98 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'embeddedUserPersistServiceImpl': Unsatisfied dependency expressed through field 'databaseOperate'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'standaloneDatabaseOperateImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: com.alibaba.nacos.api.exception.runtime.NacosRuntimeException: errCode: 500, errMsg: load schema.sql error. 
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1402)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:591)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1276)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
-	... 120 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'embeddedUserPersistServiceImpl': Unsatisfied dependency expressed through field 'databaseOperate'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'standaloneDatabaseOperateImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: com.alibaba.nacos.api.exception.runtime.NacosRuntimeException: errCode: 500, errMsg: load schema.sql error. 
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1402)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:591)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1276)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
-	... 133 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'standaloneDatabaseOperateImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: com.alibaba.nacos.api.exception.runtime.NacosRuntimeException: errCode: 500, errMsg: load schema.sql error. 
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:139)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:413)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1761)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1276)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
-	... 146 common frames omitted
-Caused by: java.lang.RuntimeException: com.alibaba.nacos.api.exception.runtime.NacosRuntimeException: errCode: 500, errMsg: load schema.sql error. 
-	at com.alibaba.nacos.config.server.service.datasource.DynamicDataSource.getDataSource(DynamicDataSource.java:58)
-	at com.alibaba.nacos.config.server.service.repository.embedded.StandaloneDatabaseOperateImpl.init(StandaloneDatabaseOperateImpl.java:60)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:307)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:136)
-	... 158 common frames omitted
-Caused by: com.alibaba.nacos.api.exception.runtime.NacosRuntimeException: errCode: 500, errMsg: load schema.sql error. 
-	at com.alibaba.nacos.config.server.service.datasource.LocalDataSourceServiceImpl.reload(LocalDataSourceServiceImpl.java:101)
-	at com.alibaba.nacos.config.server.service.datasource.LocalDataSourceServiceImpl.initialize(LocalDataSourceServiceImpl.java:168)
-	at com.alibaba.nacos.config.server.service.datasource.LocalDataSourceServiceImpl.init(LocalDataSourceServiceImpl.java:83)
-	at com.alibaba.nacos.config.server.service.datasource.DynamicDataSource.getDataSource(DynamicDataSource.java:47)
-	... 166 common frames omitted
-Caused by: java.sql.SQLException: Failed to start database 'D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\data\derby-data' with class loader org.springframework.boot.loader.LaunchedURLClassLoader@1b4fb997, see the next exception for details.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x030x020x180xc9!0xe90xcf0xf10xb30xa30x13)H0x0a0xdb{0xeb0xdb0x120xca0xf5m0x830xdd0x1c>0xabC0x910xaft0x07=]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:413)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:261)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.apache.derby.iapi.error.StandardException: Failed to start database 'D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\data\derby-data' with class loader org.springframework.boot.loader.LaunchedURLClassLoader@1b4fb997, see the next exception for details.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
-	... 15 common frames omitted
-Caused by: org.apache.derby.iapi.error.StandardException: Another instance of Derby may have already booted the database D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\data\derby-data.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
-	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.getJBMSLockOnDB(Unknown Source)
-	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
-	at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
-	at org.apache.derby.impl.store.raw.RawStore$6.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-	at org.apache.derby.impl.store.raw.RawStore.bootServiceModule(Unknown Source)
-	at org.apache.derby.impl.store.raw.RawStore.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
-	at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
-	at org.apache.derby.impl.store.access.RAMAccessManager$5.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-	at org.apache.derby.impl.store.access.RAMAccessManager.bootServiceModule(Unknown Source)
-	at org.apache.derby.impl.store.access.RAMAccessManager.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
-	at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
-	at org.apache.derby.impl.db.BasicDatabase$5.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-	at org.apache.derby.impl.db.BasicDatabase.bootServiceModule(Unknown Source)
-	at org.apache.derby.impl.db.BasicDatabase.bootStore(Unknown Source)
-	at org.apache.derby.impl.db.BasicDatabase.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.startProviderService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
-	... 12 common frames omitted
-2023-07-19 02:52:13,399 WARN [WatchFileCenter] start close
+2023-07-21 01:13:17,994 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
 
-2023-07-19 02:52:13,399 WARN [WatchFileCenter] start to shutdown this watcher which is watch : D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\conf
+2023-07-21 01:13:17,995 INFO Initializing Servlet 'dispatcherServlet'
 
-2023-07-19 02:52:13,399 WARN [WatchFileCenter] already closed
+2023-07-21 01:13:18,000 INFO Completed initialization in 5 ms
 
-2023-07-19 02:52:13,399 WARN [NotifyCenter] Start destroying Publisher
+2023-07-21 01:19:11,250 INFO Starting Nacos v1.4.3 on Rick-yxs with PID 12588 (D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\target\nacos-server.jar started by AKAtravis-yxs in D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\bin)
 
-2023-07-19 02:52:13,399 WARN [NotifyCenter] Destruction of the end
+2023-07-21 01:19:11,251 INFO The following profiles are active: standalone
 
-2023-07-19 02:52:13,400 ERROR Nacos failed to start, please see D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\logs\nacos.log for more details.
+2023-07-21 01:19:13,393 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4ae33a11' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
-2023-07-19 02:52:13,406 INFO 
+2023-07-21 01:19:13,401 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-07-21 01:19:13,845 INFO Tomcat initialized with port(s): 8848 (http)
 
-2023-07-19 02:52:13,407 ERROR Application run failed
+2023-07-21 01:19:13,882 INFO Starting service [Tomcat]
 
-org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:156)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
-	at com.alibaba.nacos.Nacos.main(Nacos.java:35)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
-	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
-	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
-	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:467)
-Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:124)
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
-	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:416)
-	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:180)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:180)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153)
-	... 16 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authFilterRegistration' defined in class path resource [com/alibaba/nacos/core/auth/AuthConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.FilterRegistrationBean]: Factory method 'authFilterRegistration' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authFilter': Unsatisfied dependency expressed through field 'authManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthManager': Unsatisfied dependency expressed through field 'authenticationManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'embeddedUserPersistServiceImpl': Unsatisfied dependency expressed through field 'databaseOperate'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'standaloneDatabaseOperateImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: com.alibaba.nacos.api.exception.runtime.NacosRuntimeException: errCode: 500, errMsg: load schema.sql error. 
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1318)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1158)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:202)
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:96)
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:85)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:253)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:227)
-	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53)
-	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5128)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
-	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
-	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:843)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
-	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
-	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486)
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:105)
-	... 21 common frames omitted
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.FilterRegistrationBean]: Factory method 'authFilterRegistration' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authFilter': Unsatisfied dependency expressed through field 'authManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthManager': Unsatisfied dependency expressed through field 'authenticationManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'embeddedUserPersistServiceImpl': Unsatisfied dependency expressed through field 'databaseOperate'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'standaloneDatabaseOperateImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: com.alibaba.nacos.api.exception.runtime.NacosRuntimeException: errCode: 500, errMsg: load schema.sql error. 
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
-	... 61 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authFilter': Unsatisfied dependency expressed through field 'authManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthManager': Unsatisfied dependency expressed through field 'authenticationManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'embeddedUserPersistServiceImpl': Unsatisfied dependency expressed through field 'databaseOperate'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'standaloneDatabaseOperateImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: com.alibaba.nacos.api.exception.runtime.NacosRuntimeException: errCode: 500, errMsg: load schema.sql error. 
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1402)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:591)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.resolveBeanReference(ConfigurationClassEnhancer.java:394)
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:366)
-	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$c432c92b.authFilter(<generated>)
-	at com.alibaba.nacos.core.auth.AuthConfig.authFilterRegistration(AuthConfig.java:34)
-	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$c432c92b.CGLIB$authFilterRegistration$0(<generated>)
-	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$c432c92b$$FastClassBySpringCGLIB$$39be3f5.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
-	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$c432c92b.authFilterRegistration(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
-	... 62 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthManager': Unsatisfied dependency expressed through field 'authenticationManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'embeddedUserPersistServiceImpl': Unsatisfied dependency expressed through field 'databaseOperate'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'standaloneDatabaseOperateImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: com.alibaba.nacos.api.exception.runtime.NacosRuntimeException: errCode: 500, errMsg: load schema.sql error. 
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1402)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:591)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1276)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
-	... 85 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'embeddedUserPersistServiceImpl': Unsatisfied dependency expressed through field 'databaseOperate'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'standaloneDatabaseOperateImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: com.alibaba.nacos.api.exception.runtime.NacosRuntimeException: errCode: 500, errMsg: load schema.sql error. 
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1402)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:591)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1318)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1158)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1276)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
-	... 98 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'embeddedUserPersistServiceImpl': Unsatisfied dependency expressed through field 'databaseOperate'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'standaloneDatabaseOperateImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: com.alibaba.nacos.api.exception.runtime.NacosRuntimeException: errCode: 500, errMsg: load schema.sql error. 
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1402)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:591)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1276)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
-	... 120 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'embeddedUserPersistServiceImpl': Unsatisfied dependency expressed through field 'databaseOperate'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'standaloneDatabaseOperateImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: com.alibaba.nacos.api.exception.runtime.NacosRuntimeException: errCode: 500, errMsg: load schema.sql error. 
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1402)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:591)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1276)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
-	... 133 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'standaloneDatabaseOperateImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: com.alibaba.nacos.api.exception.runtime.NacosRuntimeException: errCode: 500, errMsg: load schema.sql error. 
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:139)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:413)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1761)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1276)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
-	... 146 common frames omitted
-Caused by: java.lang.RuntimeException: com.alibaba.nacos.api.exception.runtime.NacosRuntimeException: errCode: 500, errMsg: load schema.sql error. 
-	at com.alibaba.nacos.config.server.service.datasource.DynamicDataSource.getDataSource(DynamicDataSource.java:58)
-	at com.alibaba.nacos.config.server.service.repository.embedded.StandaloneDatabaseOperateImpl.init(StandaloneDatabaseOperateImpl.java:60)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:307)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:136)
-	... 158 common frames omitted
-Caused by: com.alibaba.nacos.api.exception.runtime.NacosRuntimeException: errCode: 500, errMsg: load schema.sql error. 
-	at com.alibaba.nacos.config.server.service.datasource.LocalDataSourceServiceImpl.reload(LocalDataSourceServiceImpl.java:101)
-	at com.alibaba.nacos.config.server.service.datasource.LocalDataSourceServiceImpl.initialize(LocalDataSourceServiceImpl.java:168)
-	at com.alibaba.nacos.config.server.service.datasource.LocalDataSourceServiceImpl.init(LocalDataSourceServiceImpl.java:83)
-	at com.alibaba.nacos.config.server.service.datasource.DynamicDataSource.getDataSource(DynamicDataSource.java:47)
-	... 166 common frames omitted
-Caused by: java.sql.SQLException: Failed to start database 'D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\data\derby-data' with class loader org.springframework.boot.loader.LaunchedURLClassLoader@1b4fb997, see the next exception for details.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.apache.derby.iapi.error.StandardException: Failed to start database 'D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\data\derby-data' with class loader org.springframework.boot.loader.LaunchedURLClassLoader@1b4fb997, see the next exception for details.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
-	... 15 common frames omitted
-Caused by: org.apache.derby.iapi.error.StandardException: Another instance of Derby may have already booted the database D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\data\derby-data.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
-	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.getJBMSLockOnDB(Unknown Source)
-	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
-	at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
-	at org.apache.derby.impl.store.raw.RawStore$6.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-	at org.apache.derby.impl.store.raw.RawStore.bootServiceModule(Unknown Source)
-	at org.apache.derby.impl.store.raw.RawStore.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
-	at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
-	at org.apache.derby.impl.store.access.RAMAccessManager$5.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-	at org.apache.derby.impl.store.access.RAMAccessManager.bootServiceModule(Unknown Source)
-	at org.apache.derby.impl.store.access.RAMAccessManager.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
-	at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
-	at org.apache.derby.impl.db.BasicDatabase$5.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-	at org.apache.derby.impl.db.BasicDatabase.bootServiceModule(Unknown Source)
-	at org.apache.derby.impl.db.BasicDatabase.bootStore(Unknown Source)
-	at org.apache.derby.impl.db.BasicDatabase.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.startProviderService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
-	... 12 common frames omitted
+2023-07-21 01:19:13,883 INFO Starting Servlet engine: [Apache Tomcat/9.0.38]
+
+2023-07-21 01:19:14,171 INFO At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+2023-07-21 01:19:14,212 INFO Initializing Spring embedded WebApplicationContext
+
+2023-07-21 01:19:14,213 INFO Root WebApplicationContext: initialization completed in 2851 ms
+
+2023-07-21 01:19:14,648 INFO HikariPool-1 - Starting...
+
+2023-07-21 01:19:14,654 WARN Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+
+2023-07-21 01:19:14,894 INFO HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+
+2023-07-21 01:19:14,896 INFO HikariPool-1 - Start completed.
+
+2023-07-21 01:19:15,591 INFO Nacos-related cluster resource initialization
+
+2023-07-21 01:19:15,608 INFO The cluster resource is initialized
+
+2023-07-21 01:19:15,998 INFO Reflections took 27 ms to scan 1 urls, producing 4 keys and 6 values 
+
+2023-07-21 01:19:16,019 INFO Reflections took 4 ms to scan 1 urls, producing 6 keys and 26 values 
+
+2023-07-21 01:19:16,036 INFO Reflections took 4 ms to scan 1 urls, producing 3 keys and 15 values 
+
+2023-07-21 01:19:16,049 INFO Reflections took 2 ms to scan 1 urls, producing 2 keys and 12 values 
+
+2023-07-21 01:19:16,638 INFO Initializing ExecutorService 'applicationTaskExecutor'
+
+2023-07-21 01:19:16,759 INFO Adding welcome page: class path resource [static/index.html]
+
+2023-07-21 01:19:17,038 INFO Creating filter chain: Ant [pattern='/**'], []
+
+2023-07-21 01:19:17,062 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@19a20bb2, org.springframework.security.web.context.SecurityContextPersistenceFilter@365cdacf, org.springframework.security.web.header.HeaderWriterFilter@43d3aba5, org.springframework.security.web.csrf.CsrfFilter@6badba10, org.springframework.security.web.authentication.logout.LogoutFilter@668625f5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9efcd90, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b5de58f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75babb67, org.springframework.security.web.session.SessionManagementFilter@688a2c09, org.springframework.security.web.access.ExceptionTranslationFilter@2fd64b11]
+
+2023-07-21 01:19:17,125 INFO Initializing ExecutorService 'taskScheduler'
+
+2023-07-21 01:19:17,145 INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+
+2023-07-21 01:19:17,221 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+
+2023-07-21 01:19:17,224 INFO Started Nacos in 7.068 seconds (JVM running for 7.539)
+
+2023-07-21 01:19:17,225 INFO Nacos started successfully in stand alone mode. use embedded storage
+
+2023-07-21 01:19:46,398 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2023-07-21 01:19:46,398 INFO Initializing Servlet 'dispatcherServlet'
+
+2023-07-21 01:19:46,404 INFO Completed initialization in 5 ms
+
+2023-07-21 01:29:16,201 INFO [capacityManagement] start correct usage
+
+2023-07-21 01:29:16,212 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 01:29:16,375 WARN clearConfigHistory start
+
+2023-07-21 01:39:16,222 INFO [capacityManagement] start correct usage
+
+2023-07-21 01:39:16,222 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 01:39:16,381 WARN clearConfigHistory start
+
+2023-07-21 01:49:16,234 INFO [capacityManagement] start correct usage
+
+2023-07-21 01:49:16,234 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 01:49:16,390 WARN clearConfigHistory start
+
+2023-07-21 12:55:15,406 INFO Starting Nacos v1.4.3 on Rick-yxs with PID 316 (D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\target\nacos-server.jar started by AKAtravis-yxs in D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\bin)
+
+2023-07-21 12:55:15,406 INFO The following profiles are active: standalone
+
+2023-07-21 12:55:17,911 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@31e3250d' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2023-07-21 12:55:17,922 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2023-07-21 12:55:18,411 INFO Tomcat initialized with port(s): 8848 (http)
+
+2023-07-21 12:55:18,446 INFO Starting service [Tomcat]
+
+2023-07-21 12:55:18,447 INFO Starting Servlet engine: [Apache Tomcat/9.0.38]
+
+2023-07-21 12:55:18,755 INFO At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+2023-07-21 12:55:18,801 INFO Initializing Spring embedded WebApplicationContext
+
+2023-07-21 12:55:18,801 INFO Root WebApplicationContext: initialization completed in 3267 ms
+
+2023-07-21 12:55:19,238 INFO HikariPool-1 - Starting...
+
+2023-07-21 12:55:19,247 WARN Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+
+2023-07-21 12:55:19,497 INFO HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+
+2023-07-21 12:55:19,500 INFO HikariPool-1 - Start completed.
+
+2023-07-21 12:55:20,361 INFO Nacos-related cluster resource initialization
+
+2023-07-21 12:55:20,376 INFO The cluster resource is initialized
+
+2023-07-21 12:55:20,768 INFO Reflections took 31 ms to scan 1 urls, producing 4 keys and 6 values 
+
+2023-07-21 12:55:20,792 INFO Reflections took 4 ms to scan 1 urls, producing 6 keys and 26 values 
+
+2023-07-21 12:55:20,805 INFO Reflections took 3 ms to scan 1 urls, producing 3 keys and 15 values 
+
+2023-07-21 12:55:20,813 INFO Reflections took 2 ms to scan 1 urls, producing 2 keys and 12 values 
+
+2023-07-21 12:55:21,479 INFO Initializing ExecutorService 'applicationTaskExecutor'
+
+2023-07-21 12:55:21,586 INFO Adding welcome page: class path resource [static/index.html]
+
+2023-07-21 12:55:21,862 INFO Creating filter chain: Ant [pattern='/**'], []
+
+2023-07-21 12:55:21,888 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ee83775, org.springframework.security.web.context.SecurityContextPersistenceFilter@2fd64b11, org.springframework.security.web.header.HeaderWriterFilter@550de6b8, org.springframework.security.web.csrf.CsrfFilter@4548d254, org.springframework.security.web.authentication.logout.LogoutFilter@7eb200ce, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43d3aba5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f1b8544, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c2924d7, org.springframework.security.web.session.SessionManagementFilter@5e9f73b, org.springframework.security.web.access.ExceptionTranslationFilter@6badba10]
+
+2023-07-21 12:55:21,951 INFO Initializing ExecutorService 'taskScheduler'
+
+2023-07-21 12:55:21,970 INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+
+2023-07-21 12:55:22,055 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+
+2023-07-21 12:55:22,058 INFO Started Nacos in 7.755 seconds (JVM running for 8.347)
+
+2023-07-21 12:55:22,059 INFO Nacos started successfully in stand alone mode. use embedded storage
+
+2023-07-21 12:57:24,209 INFO Starting Nacos v1.4.3 on Rick-yxs with PID 2844 (D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\target\nacos-server.jar started by AKAtravis-yxs in D:\back-end learning\java-exercise\JavaEE\SpringCloud-yxs\SpringCloudAlibaba\SpringCloudStudy\nacos\bin)
+
+2023-07-21 12:57:24,209 INFO The following profiles are active: standalone
+
+2023-07-21 12:57:26,469 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1cd201a8' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2023-07-21 12:57:26,477 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2023-07-21 12:57:26,980 INFO Tomcat initialized with port(s): 8848 (http)
+
+2023-07-21 12:57:27,014 INFO Starting service [Tomcat]
+
+2023-07-21 12:57:27,014 INFO Starting Servlet engine: [Apache Tomcat/9.0.38]
+
+2023-07-21 12:57:27,280 INFO At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+2023-07-21 12:57:27,322 INFO Initializing Spring embedded WebApplicationContext
+
+2023-07-21 12:57:27,322 INFO Root WebApplicationContext: initialization completed in 2998 ms
+
+2023-07-21 12:57:27,766 INFO HikariPool-1 - Starting...
+
+2023-07-21 12:57:27,773 WARN Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+
+2023-07-21 12:57:28,013 INFO HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+
+2023-07-21 12:57:28,015 INFO HikariPool-1 - Start completed.
+
+2023-07-21 12:57:28,716 INFO Nacos-related cluster resource initialization
+
+2023-07-21 12:57:28,736 INFO The cluster resource is initialized
+
+2023-07-21 12:57:29,155 INFO Reflections took 30 ms to scan 1 urls, producing 4 keys and 6 values 
+
+2023-07-21 12:57:29,184 INFO Reflections took 4 ms to scan 1 urls, producing 6 keys and 26 values 
+
+2023-07-21 12:57:29,204 INFO Reflections took 5 ms to scan 1 urls, producing 3 keys and 15 values 
+
+2023-07-21 12:57:29,214 INFO Reflections took 3 ms to scan 1 urls, producing 2 keys and 12 values 
+
+2023-07-21 12:57:29,828 INFO Initializing ExecutorService 'applicationTaskExecutor'
+
+2023-07-21 12:57:29,959 INFO Adding welcome page: class path resource [static/index.html]
+
+2023-07-21 12:57:30,264 INFO Creating filter chain: Ant [pattern='/**'], []
+
+2023-07-21 12:57:30,286 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e9f73b, org.springframework.security.web.context.SecurityContextPersistenceFilter@39c96e48, org.springframework.security.web.header.HeaderWriterFilter@43b5021c, org.springframework.security.web.csrf.CsrfFilter@42cc183e, org.springframework.security.web.authentication.logout.LogoutFilter@5befbac1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40d23c82, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6badba10, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a565afb, org.springframework.security.web.session.SessionManagementFilter@208f0007, org.springframework.security.web.access.ExceptionTranslationFilter@6bee793f]
+
+2023-07-21 12:57:30,349 INFO Initializing ExecutorService 'taskScheduler'
+
+2023-07-21 12:57:30,372 INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+
+2023-07-21 12:57:30,459 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+
+2023-07-21 12:57:30,463 INFO Started Nacos in 7.292 seconds (JVM running for 7.765)
+
+2023-07-21 12:57:30,463 INFO Nacos started successfully in stand alone mode. use embedded storage
+
+2023-07-21 12:57:38,201 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2023-07-21 12:57:38,202 INFO Initializing Servlet 'dispatcherServlet'
+
+2023-07-21 12:57:38,207 INFO Completed initialization in 5 ms
+
+2023-07-21 13:07:29,381 INFO [capacityManagement] start correct usage
+
+2023-07-21 13:07:29,418 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 13:07:29,557 WARN clearConfigHistory start
+
+2023-07-21 13:17:29,429 INFO [capacityManagement] start correct usage
+
+2023-07-21 13:17:29,429 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 13:17:29,564 WARN clearConfigHistory start
+
+2023-07-21 13:27:29,431 INFO [capacityManagement] start correct usage
+
+2023-07-21 13:27:29,431 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 13:27:29,566 WARN clearConfigHistory start
+
+2023-07-21 13:37:29,446 INFO [capacityManagement] start correct usage
+
+2023-07-21 13:37:29,446 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 13:37:29,567 WARN clearConfigHistory start
+
+2023-07-21 13:47:29,454 INFO [capacityManagement] start correct usage
+
+2023-07-21 13:47:29,454 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 13:47:29,582 WARN clearConfigHistory start
+
+2023-07-21 13:57:29,457 INFO [capacityManagement] start correct usage
+
+2023-07-21 13:57:29,458 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 13:57:29,583 WARN clearConfigHistory start
+
+2023-07-21 14:07:29,461 INFO [capacityManagement] start correct usage
+
+2023-07-21 14:07:29,461 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 14:07:29,584 WARN clearConfigHistory start
+
+2023-07-21 14:17:29,467 INFO [capacityManagement] start correct usage
+
+2023-07-21 14:17:29,467 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 14:17:29,585 WARN clearConfigHistory start
+
+2023-07-21 14:27:29,477 INFO [capacityManagement] start correct usage
+
+2023-07-21 14:27:29,477 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 14:27:29,588 WARN clearConfigHistory start
+
+2023-07-21 14:37:29,482 INFO [capacityManagement] start correct usage
+
+2023-07-21 14:37:29,482 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 14:37:29,594 WARN clearConfigHistory start
+
+2023-07-21 14:47:29,489 INFO [capacityManagement] start correct usage
+
+2023-07-21 14:47:29,489 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 14:47:29,601 WARN clearConfigHistory start
+
+2023-07-21 14:57:29,494 INFO [capacityManagement] start correct usage
+
+2023-07-21 14:57:29,494 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 14:57:29,606 WARN clearConfigHistory start
+
+2023-07-21 15:07:29,508 INFO [capacityManagement] start correct usage
+
+2023-07-21 15:07:29,509 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 15:07:29,608 WARN clearConfigHistory start
+
+2023-07-21 15:17:29,509 INFO [capacityManagement] start correct usage
+
+2023-07-21 15:17:29,510 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 15:17:29,608 WARN clearConfigHistory start
+
+2023-07-21 15:27:29,510 INFO [capacityManagement] start correct usage
+
+2023-07-21 15:27:29,510 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 15:27:29,622 WARN clearConfigHistory start
+
+2023-07-21 15:37:29,521 INFO [capacityManagement] start correct usage
+
+2023-07-21 15:37:29,522 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 15:37:29,633 WARN clearConfigHistory start
+
+2023-07-21 15:47:29,534 INFO [capacityManagement] start correct usage
+
+2023-07-21 15:47:29,534 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 15:47:29,646 WARN clearConfigHistory start
+
+2023-07-21 15:57:29,548 INFO [capacityManagement] start correct usage
+
+2023-07-21 15:57:29,549 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 15:57:29,660 WARN clearConfigHistory start
+
+2023-07-21 16:07:29,563 INFO [capacityManagement] start correct usage
+
+2023-07-21 16:07:29,563 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 16:07:29,675 WARN clearConfigHistory start
+
+2023-07-21 16:17:29,572 INFO [capacityManagement] start correct usage
+
+2023-07-21 16:17:29,572 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 16:17:29,684 WARN clearConfigHistory start
+
+2023-07-21 16:27:29,573 INFO [capacityManagement] start correct usage
+
+2023-07-21 16:27:29,573 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 16:27:29,685 WARN clearConfigHistory start
+
+2023-07-21 16:37:29,579 INFO [capacityManagement] start correct usage
+
+2023-07-21 16:37:29,579 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 16:37:29,691 WARN clearConfigHistory start
+
+2023-07-21 16:47:29,585 INFO [capacityManagement] start correct usage
+
+2023-07-21 16:47:29,585 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 16:47:29,692 WARN clearConfigHistory start
+
+2023-07-21 16:57:29,595 INFO [capacityManagement] start correct usage
+
+2023-07-21 16:57:29,595 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 16:57:29,693 WARN clearConfigHistory start
+
+2023-07-21 17:07:29,596 INFO [capacityManagement] start correct usage
+
+2023-07-21 17:07:29,597 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 17:07:29,708 WARN clearConfigHistory start
+
+2023-07-21 17:17:29,603 INFO [capacityManagement] start correct usage
+
+2023-07-21 17:17:29,603 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 17:17:29,715 WARN clearConfigHistory start
+
+2023-07-21 17:27:29,603 INFO [capacityManagement] start correct usage
+
+2023-07-21 17:27:29,604 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 17:27:29,715 WARN clearConfigHistory start
+
+2023-07-21 17:37:29,612 INFO [capacityManagement] start correct usage
+
+2023-07-21 17:37:29,612 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 17:37:29,717 WARN clearConfigHistory start
+
+2023-07-21 17:47:29,629 INFO [capacityManagement] start correct usage
+
+2023-07-21 17:47:29,629 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 17:47:29,723 WARN clearConfigHistory start
+
+2023-07-21 17:57:29,638 INFO [capacityManagement] start correct usage
+
+2023-07-21 17:57:29,638 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 17:57:29,734 WARN clearConfigHistory start
+
+2023-07-21 18:07:29,640 INFO [capacityManagement] start correct usage
+
+2023-07-21 18:07:29,640 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 18:07:29,736 WARN clearConfigHistory start
+
+2023-07-21 18:17:29,644 INFO [capacityManagement] start correct usage
+
+2023-07-21 18:17:29,644 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 18:17:29,740 WARN clearConfigHistory start
+
+2023-07-21 18:27:29,653 INFO [capacityManagement] start correct usage
+
+2023-07-21 18:27:29,653 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 18:27:29,749 WARN clearConfigHistory start
+
+2023-07-21 18:37:29,655 INFO [capacityManagement] start correct usage
+
+2023-07-21 18:37:29,655 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 18:37:29,751 WARN clearConfigHistory start
+
+2023-07-21 18:47:29,656 INFO [capacityManagement] start correct usage
+
+2023-07-21 18:47:29,656 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-21 18:47:29,752 WARN clearConfigHistory start
+

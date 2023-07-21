@@ -8,8 +8,18 @@ spring:
       config:
         file-extension: yaml
         server-addr: localhost:8848
-    sentinel:
-      transport:
-        dashboard: localhost:8858
+    loadbalancer:
+      nacos:
+        enabled: true
+#    sentinel:
+#      transport:
+#        dashboard: localhost:8858
+
+#seata:
+#  service:
+#    vgroup-mapping:
+#      book-service-seata-service-group: default
+#    grouplist:
+#      default: localhost:7091
 
 

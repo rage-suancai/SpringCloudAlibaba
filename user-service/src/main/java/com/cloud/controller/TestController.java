@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
-    @Value("${test.txt}")
+    /*@Value("${test.txt}")
     private String txt;
 
     @GetMapping("/api/test")
     public String out() {
         return txt;
-    }
+    }*/
 
 }

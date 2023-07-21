@@ -1,42 +1,86 @@
-2023-07-19 00:51:47,958 INFO GlobalConfig{taskDispatchPeriod=2000, batchSyncKeyCount=1000, syncRetryDelay=5000, dataWarmup=false, expireInstance=true, loadDataRetryDelayMillis=30000}
+2023-07-21 01:13:01,173 INFO GlobalConfig{taskDispatchPeriod=2000, batchSyncKeyCount=1000, syncRetryDelay=5000, dataWarmup=false, expireInstance=true, loadDataRetryDelayMillis=30000}
 
-2023-07-19 00:51:48,469 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
+2023-07-21 01:13:01,709 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
 
-2023-07-19 00:51:48,470 INFO listen for service meta change
+2023-07-21 01:13:01,710 INFO listen for service meta change
 
-2023-07-19 00:51:52,949 INFO [NACOS-DISTRO] healthy server list changed, old: [169.254.212.239:8848], new: [169.254.212.239:8848]
+2023-07-21 01:13:06,157 INFO [NACOS-DISTRO] healthy server list changed, old: [169.254.212.239:8848], new: [169.254.212.239:8848]
 
-2023-07-19 00:52:59,437 INFO creating empty service public:DEFAULT_GROUP@@borrow-service
+2023-07-21 01:19:15,647 INFO GlobalConfig{taskDispatchPeriod=2000, batchSyncKeyCount=1000, syncRetryDelay=5000, dataWarmup=false, expireInstance=true, loadDataRetryDelayMillis=30000}
 
-2023-07-19 00:52:59,532 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@borrow-service, value: {"instanceList":[{"instanceId":"169.254.212.239#8301#DEFAULT#DEFAULT_GROUP@@borrow-service","ip":"169.254.212.239","port":8301,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@borrow-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689238825483,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+2023-07-21 01:19:16,161 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
 
-2023-07-19 00:52:59,535 WARN cluster: DEFAULT not found, ip: {"instanceId":"169.254.212.239#8301#DEFAULT#DEFAULT_GROUP@@borrow-service","ip":"169.254.212.239","port":8301,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@borrow-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689238825483,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+2023-07-21 01:19:16,162 INFO listen for service meta change
 
-2023-07-19 00:52:59,554 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@borrow-service","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1689699179538,"checksum":"5ac37485f7df1412872c6af277d4a3c7","clusterMap":{"DEFAULT":{"serviceName":"DEFAULT_GROUP@@borrow-service","name":"DEFAULT","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"defIPPort":80,"empty":false}},"empty":false}
+2023-07-21 01:19:20,640 INFO [NACOS-DISTRO] healthy server list changed, old: [169.254.212.239:8848], new: [169.254.212.239:8848]
 
-2023-07-19 00:52:59,557 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@borrow-service, value: {"instanceList":[{"instanceId":"169.254.212.239#8301#DEFAULT#DEFAULT_GROUP@@borrow-service","ip":"169.254.212.239","port":8301,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@borrow-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689699179436,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+2023-07-21 01:25:26,457 INFO creating empty service public:DEFAULT_GROUP@@borrow-service
 
-2023-07-19 00:53:01,521 INFO creating empty service public:DEFAULT_GROUP@@book-service
+2023-07-21 01:25:26,536 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@borrow-service, value: {"instanceList":[{"instanceId":"169.254.212.239#8301#DEFAULT#DEFAULT_GROUP@@borrow-service","ip":"169.254.212.239","port":8301,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@borrow-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689238825483,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}]}
 
-2023-07-19 00:53:01,522 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@book-service","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1689699181521,"checksum":"f03a1b2b162d456b2c2c90663552a092","clusterMap":{},"empty":true}
+2023-07-21 01:25:26,538 WARN cluster: DEFAULT not found, ip: {"instanceId":"169.254.212.239#8301#DEFAULT#DEFAULT_GROUP@@borrow-service","ip":"169.254.212.239","port":8301,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@borrow-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689238825483,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}, will create new cluster with default configuration.
 
-2023-07-19 00:53:01,523 WARN cluster: Chongqing not found, ip: {"instanceId":"169.254.212.239#8201#Chongqing#DEFAULT_GROUP@@book-service","ip":"169.254.212.239","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chongqing","serviceName":"DEFAULT_GROUP@@book-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689699181521,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+2023-07-21 01:25:26,554 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@borrow-service","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1689873926541,"checksum":"5ac37485f7df1412872c6af277d4a3c7","clusterMap":{"DEFAULT":{"serviceName":"DEFAULT_GROUP@@borrow-service","name":"DEFAULT","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"defIPPort":80,"empty":false}},"empty":false}
 
-2023-07-19 00:53:01,523 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@book-service, value: {"instanceList":[{"instanceId":"169.254.212.239#8201#Chongqing#DEFAULT_GROUP@@book-service","ip":"169.254.212.239","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chongqing","serviceName":"DEFAULT_GROUP@@book-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689699181521,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+2023-07-21 01:25:26,556 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@borrow-service, value: {"instanceList":[{"instanceId":"169.254.212.239#8301#DEFAULT#DEFAULT_GROUP@@borrow-service","ip":"169.254.212.239","port":8301,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@borrow-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689873926457,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}]}
 
-2023-07-19 00:53:04,678 INFO creating empty service public:DEFAULT_GROUP@@user-service
+2023-07-21 01:25:55,348 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@borrow-service, value: {"instanceList":[]}
 
-2023-07-19 00:53:04,679 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@user-service","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1689699184678,"checksum":"09c170b3683511203520dbf5dfc1a330","clusterMap":{},"empty":true}
+2023-07-21 01:25:59,530 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrow-service
 
-2023-07-19 00:53:04,679 WARN cluster: Chongqing not found, ip: {"instanceId":"169.254.212.239#8101#Chongqing#DEFAULT_GROUP@@user-service","ip":"169.254.212.239","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chongqing","serviceName":"DEFAULT_GROUP@@user-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689699184678,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+2023-07-21 01:29:50,850 INFO creating empty service public:DEFAULT_GROUP@@book-service
 
-2023-07-19 00:53:04,679 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@user-service, value: {"instanceList":[{"instanceId":"169.254.212.239#8101#Chongqing#DEFAULT_GROUP@@user-service","ip":"169.254.212.239","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chongqing","serviceName":"DEFAULT_GROUP@@user-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689699184678,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+2023-07-21 01:29:50,851 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@book-service","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1689874190850,"checksum":"f03a1b2b162d456b2c2c90663552a092","clusterMap":{},"empty":true}
 
-2023-07-19 02:51:58,274 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@borrow-service, value: {"instanceList":[]}
+2023-07-21 01:29:50,851 WARN cluster: Chongqing not found, ip: {"instanceId":"169.254.212.239#8201#Chongqing#DEFAULT_GROUP@@book-service","ip":"169.254.212.239","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chongqing","serviceName":"DEFAULT_GROUP@@book-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689874190850,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}, will create new cluster with default configuration.
 
-2023-07-19 02:51:58,300 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@book-service, value: {"instanceList":[]}
+2023-07-21 01:29:50,851 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@book-service, value: {"instanceList":[{"instanceId":"169.254.212.239#8201#Chongqing#DEFAULT_GROUP@@book-service","ip":"169.254.212.239","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chongqing","serviceName":"DEFAULT_GROUP@@book-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689874190850,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}]}
 
-2023-07-19 02:51:58,327 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@user-service, value: {"instanceList":[]}
+2023-07-21 01:29:53,695 INFO creating empty service public:DEFAULT_GROUP@@user-service
 
-2023-07-19 02:52:02,990 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrow-service
+2023-07-21 01:29:53,696 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@user-service","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1689874193695,"checksum":"09c170b3683511203520dbf5dfc1a330","clusterMap":{},"empty":true}
+
+2023-07-21 01:29:53,696 WARN cluster: Chongqing not found, ip: {"instanceId":"169.254.212.239#8101#Chongqing#DEFAULT_GROUP@@user-service","ip":"169.254.212.239","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chongqing","serviceName":"DEFAULT_GROUP@@user-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689874193695,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}, will create new cluster with default configuration.
+
+2023-07-21 01:29:53,696 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@user-service, value: {"instanceList":[{"instanceId":"169.254.212.239#8101#Chongqing#DEFAULT_GROUP@@user-service","ip":"169.254.212.239","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chongqing","serviceName":"DEFAULT_GROUP@@user-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689874193695,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}]}
+
+2023-07-21 01:29:54,776 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@user-service, value: {"instanceList":[]}
+
+2023-07-21 01:29:56,272 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrow-service
+
+2023-07-21 01:29:56,305 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@borrow-service, value: {"instanceList":[{"instanceId":"169.254.212.239#8301#DEFAULT#DEFAULT_GROUP@@borrow-service","ip":"169.254.212.239","port":8301,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@borrow-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689874196305,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}]}
+
+2023-07-21 01:31:14,585 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@user-service, value: {"instanceList":[{"instanceId":"169.254.212.239#8101#Chongqing#DEFAULT_GROUP@@user-service","ip":"169.254.212.239","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chongqing","serviceName":"DEFAULT_GROUP@@user-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689874274584,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}]}
+
+2023-07-21 01:33:31,540 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@borrow-service, value: {"instanceList":[]}
+
+2023-07-21 01:33:31,567 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@book-service, value: {"instanceList":[]}
+
+2023-07-21 01:33:31,595 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@user-service, value: {"instanceList":[]}
+
+2023-07-21 01:33:35,704 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrow-service
+
+2023-07-21 01:35:36,174 WARN namespace : public, [DEFAULT_GROUP@@book-service] services are automatically cleaned
+
+2023-07-21 01:35:36,178 WARN namespace : public, [DEFAULT_GROUP@@user-service] services are automatically cleaned
+
+2023-07-21 01:35:36,179 INFO [DEAD-SERVICE] {"name":"DEFAULT_GROUP@@book-service","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":5,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1689874411567,"checksum":"0d3c2dc425fa5f8a77235006c90703cc","clusterMap":{"Chongqing":{"serviceName":"DEFAULT_GROUP@@book-service","name":"Chongqing","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"defIPPort":80,"empty":true}},"empty":true}
+
+2023-07-21 01:35:36,180 INFO [DEAD-SERVICE] {"name":"DEFAULT_GROUP@@user-service","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":5,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1689874411595,"checksum":"59e27dccf186bcf5858570a03f35cd8d","clusterMap":{"Chongqing":{"serviceName":"DEFAULT_GROUP@@user-service","name":"Chongqing","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"defIPPort":80,"empty":true}},"empty":true}
+
+2023-07-21 12:55:20,417 INFO GlobalConfig{taskDispatchPeriod=2000, batchSyncKeyCount=1000, syncRetryDelay=5000, dataWarmup=false, expireInstance=true, loadDataRetryDelayMillis=30000}
+
+2023-07-21 12:55:20,931 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
+
+2023-07-21 12:55:20,932 INFO listen for service meta change
+
+2023-07-21 12:55:25,414 INFO [NACOS-DISTRO] healthy server list changed, old: [169.254.212.239:8848], new: [169.254.212.239:8848]
+
+2023-07-21 12:57:28,781 INFO GlobalConfig{taskDispatchPeriod=2000, batchSyncKeyCount=1000, syncRetryDelay=5000, dataWarmup=false, expireInstance=true, loadDataRetryDelayMillis=30000}
+
+2023-07-21 12:57:29,330 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
+
+2023-07-21 12:57:29,330 INFO listen for service meta change
+
+2023-07-21 12:57:33,778 INFO [NACOS-DISTRO] healthy server list changed, old: [169.254.212.239:8848], new: [169.254.212.239:8848]
 

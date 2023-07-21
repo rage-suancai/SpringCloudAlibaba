@@ -1,214 +1,308 @@
-2023-07-19 00:53:00,539 INFO DEFAULT_GROUP@@borrow-service is changed, add it to push queue.
+2023-07-21 01:25:27,550 INFO DEFAULT_GROUP@@borrow-service is changed, add it to push queue.
 
-2023-07-19 00:53:00,550 INFO serviceName: DEFAULT_GROUP@@borrow-service changed, schedule push for: 169.254.212.239:53411, agent: Nacos-Java-Client:v1.4.2, key: 169.254.212.239,53411,51358265713100
+2023-07-21 01:25:27,560 INFO serviceName: DEFAULT_GROUP@@borrow-service changed, schedule push for: 169.254.212.239:49154, agent: Nacos-Java-Client:v1.4.2, key: 169.254.212.239,49154,51745275248600
 
-2023-07-19 00:53:00,550 INFO send udp packet: 169.254.212.239,53411,51358265713100
+2023-07-21 01:25:27,560 INFO send udp packet: 169.254.212.239,49154,51745275248600
 
-2023-07-19 00:53:00,555 ERROR [NACOS-PUSH] error while receiving ack data
+2023-07-21 01:25:27,566 ERROR [NACOS-PUSH] error while receiving ack data
 
-java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,53411,51358265713100, ack json: {"type": "push-ack", "lastRefTime":"51358265713100", "data":""}
+java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,49154,51745275248600, ack json: {"type": "push-ack", "lastRefTime":"51745275248600", "data":""}
 	at com.alibaba.nacos.naming.push.PushService$Receiver.run(PushService.java:680)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-07-19 00:53:02,531 INFO DEFAULT_GROUP@@book-service is changed, add it to push queue.
+2023-07-21 01:25:35,018 INFO DEFAULT_GROUP@@borrow-service is changed, add it to push queue.
 
-2023-07-19 00:53:02,531 INFO serviceName: DEFAULT_GROUP@@book-service changed, schedule push for: 169.254.212.239:61669, agent: Nacos-Java-Client:v1.4.2, key: 169.254.212.239,61669,51360251690997
+2023-07-21 01:25:35,019 INFO serviceName: DEFAULT_GROUP@@borrow-service changed, schedule push for: 169.254.212.239:49154, agent: Nacos-Java-Client:v1.4.2, key: 169.254.212.239,49154,51752738725731
 
-2023-07-19 00:53:02,531 INFO send udp packet: 169.254.212.239,61669,51360251690997
+2023-07-21 01:25:35,019 INFO send udp packet: 169.254.212.239,49154,51752738725731
 
-2023-07-19 00:53:02,534 ERROR [NACOS-PUSH] error while receiving ack data
+2023-07-21 01:25:35,020 ERROR [NACOS-PUSH] error while receiving ack data
 
-java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,61669,51360251690997, ack json: {"type": "push-ack", "lastRefTime":"51360251690997", "data":""}
+java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,49154,51752738725731, ack json: {"type": "push-ack", "lastRefTime":"51752738725731", "data":""}
 	at com.alibaba.nacos.naming.push.PushService$Receiver.run(PushService.java:680)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-07-19 00:53:05,691 INFO DEFAULT_GROUP@@user-service is changed, add it to push queue.
+2023-07-21 01:25:37,564 INFO retry to push data, key: 169.254.212.239,49154,51745275248600
 
-2023-07-19 00:53:05,691 INFO serviceName: DEFAULT_GROUP@@user-service changed, schedule push for: 169.254.212.239:56338, agent: Nacos-Java-Client:v1.4.2, key: 169.254.212.239,56338,51363411562782
+2023-07-21 01:25:37,564 INFO send udp packet: 169.254.212.239,49154,51745275248600
 
-2023-07-19 00:53:05,691 INFO send udp packet: 169.254.212.239,56338,51363411562782
+2023-07-21 01:25:37,565 WARN ack takes too long from /[0:0:0:0:0:ffff:a9fe:d4ef%16]:49154 ack json: {"type": "push-ack", "lastRefTime":"51745275248600", "data":""}
 
-2023-07-19 00:53:05,694 ERROR [NACOS-PUSH] error while receiving ack data
+2023-07-21 01:25:37,566 ERROR [NACOS-PUSH] error while receiving ack data
 
-java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,56338,51363411562782, ack json: {"type": "push-ack", "lastRefTime":"51363411562782", "data":""}
+java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,49154,51745275248600, ack json: {"type": "push-ack", "lastRefTime":"51745275248600", "data":""}
 	at com.alibaba.nacos.naming.push.PushService$Receiver.run(PushService.java:680)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-07-19 00:53:10,560 INFO retry to push data, key: 169.254.212.239,53411,51358265713100
+2023-07-21 01:25:45,027 INFO retry to push data, key: 169.254.212.239,49154,51752738725731
 
-2023-07-19 00:53:10,560 INFO send udp packet: 169.254.212.239,53411,51358265713100
+2023-07-21 01:25:45,027 INFO send udp packet: 169.254.212.239,49154,51752738725731
 
-2023-07-19 00:53:10,561 WARN ack takes too long from /[0:0:0:0:0:ffff:a9fe:d4ef%16]:53411 ack json: {"type": "push-ack", "lastRefTime":"51358265713100", "data":""}
+2023-07-21 01:25:45,028 WARN ack takes too long from /[0:0:0:0:0:ffff:a9fe:d4ef%16]:49154 ack json: {"type": "push-ack", "lastRefTime":"51752738725731", "data":""}
 
-2023-07-19 00:53:10,561 ERROR [NACOS-PUSH] error while receiving ack data
+2023-07-21 01:25:45,028 ERROR [NACOS-PUSH] error while receiving ack data
 
-java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,53411,51358265713100, ack json: {"type": "push-ack", "lastRefTime":"51358265713100", "data":""}
+java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,49154,51752738725731, ack json: {"type": "push-ack", "lastRefTime":"51752738725731", "data":""}
 	at com.alibaba.nacos.naming.push.PushService$Receiver.run(PushService.java:680)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-07-19 00:53:10,894 INFO DEFAULT_GROUP@@borrow-service is changed, add it to push queue.
+2023-07-21 01:25:47,579 INFO retry to push data, key: 169.254.212.239,49154,51745275248600
 
-2023-07-19 00:53:10,895 INFO serviceName: DEFAULT_GROUP@@borrow-service changed, schedule push for: 169.254.212.239:53411, agent: Nacos-Java-Client:v1.4.2, key: 169.254.212.239,53411,51368614405811
+2023-07-21 01:25:47,579 WARN max re-push times reached, retry times 2, key: 169.254.212.239,49154,51745275248600
 
-2023-07-19 00:53:10,895 INFO send udp packet: 169.254.212.239,53411,51368614405811
+2023-07-21 01:25:55,032 INFO retry to push data, key: 169.254.212.239,49154,51752738725731
 
-2023-07-19 00:53:10,896 ERROR [NACOS-PUSH] error while receiving ack data
+2023-07-21 01:25:55,032 WARN max re-push times reached, retry times 2, key: 169.254.212.239,49154,51752738725731
 
-java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,53411,51368614405811, ack json: {"type": "push-ack", "lastRefTime":"51368614405811", "data":""}
+2023-07-21 01:25:56,351 INFO DEFAULT_GROUP@@borrow-service is changed, add it to push queue.
+
+2023-07-21 01:25:56,352 INFO serviceName: DEFAULT_GROUP@@borrow-service changed, schedule push for: 169.254.212.239:49154, agent: Nacos-Java-Client:v1.4.2, key: 169.254.212.239,49154,51774072049380
+
+2023-07-21 01:25:56,352 INFO send udp packet: 169.254.212.239,49154,51774072049380
+
+2023-07-21 01:25:56,359 ERROR [NACOS-PUSH] error while receiving ack data
+
+java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,49154,51774072049380, ack json: {"type": "push-ack", "lastRefTime":"51774072049380", "data":""}
 	at com.alibaba.nacos.naming.push.PushService$Receiver.run(PushService.java:680)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-07-19 00:53:12,544 INFO retry to push data, key: 169.254.212.239,61669,51360251690997
+2023-07-21 01:25:59,530 INFO DEFAULT_GROUP@@borrow-service is changed, add it to push queue.
 
-2023-07-19 00:53:12,544 INFO send udp packet: 169.254.212.239,61669,51360251690997
+2023-07-21 01:25:59,530 INFO serviceName: DEFAULT_GROUP@@borrow-service changed, schedule push for: 169.254.212.239:49154, agent: Nacos-Java-Client:v1.4.2, key: 169.254.212.239,49154,51777249995949
 
-2023-07-19 00:53:12,546 WARN ack takes too long from /[0:0:0:0:0:ffff:a9fe:d4ef%16]:61669 ack json: {"type": "push-ack", "lastRefTime":"51360251690997", "data":""}
+2023-07-21 01:25:59,530 INFO send udp packet: 169.254.212.239,49154,51777249995949
 
-2023-07-19 00:53:12,546 ERROR [NACOS-PUSH] error while receiving ack data
+2023-07-21 01:25:59,532 ERROR [NACOS-PUSH] error while receiving ack data
 
-java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,61669,51360251690997, ack json: {"type": "push-ack", "lastRefTime":"51360251690997", "data":""}
+java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,49154,51777249995949, ack json: {"type": "push-ack", "lastRefTime":"51777249995949", "data":""}
 	at com.alibaba.nacos.naming.push.PushService$Receiver.run(PushService.java:680)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-07-19 00:53:15,703 INFO retry to push data, key: 169.254.212.239,56338,51363411562782
+2023-07-21 01:26:06,356 INFO retry to push data, key: 169.254.212.239,49154,51774072049380
 
-2023-07-19 00:53:15,703 INFO send udp packet: 169.254.212.239,56338,51363411562782
+2023-07-21 01:26:06,356 INFO send udp packet: 169.254.212.239,49154,51774072049380
 
-2023-07-19 00:53:15,704 WARN ack takes too long from /[0:0:0:0:0:ffff:a9fe:d4ef%16]:56338 ack json: {"type": "push-ack", "lastRefTime":"51363411562782", "data":""}
+2023-07-21 01:26:09,533 INFO retry to push data, key: 169.254.212.239,49154,51777249995949
 
-2023-07-19 00:53:15,704 ERROR [NACOS-PUSH] error while receiving ack data
+2023-07-21 01:26:09,533 INFO send udp packet: 169.254.212.239,49154,51777249995949
 
-java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,56338,51363411562782, ack json: {"type": "push-ack", "lastRefTime":"51363411562782", "data":""}
+2023-07-21 01:26:16,358 INFO retry to push data, key: 169.254.212.239,49154,51774072049380
+
+2023-07-21 01:26:16,358 WARN max re-push times reached, retry times 2, key: 169.254.212.239,49154,51774072049380
+
+2023-07-21 01:26:19,535 INFO retry to push data, key: 169.254.212.239,49154,51777249995949
+
+2023-07-21 01:26:19,535 WARN max re-push times reached, retry times 2, key: 169.254.212.239,49154,51777249995949
+
+2023-07-21 01:29:51,859 INFO DEFAULT_GROUP@@book-service is changed, add it to push queue.
+
+2023-07-21 01:29:51,859 INFO serviceName: DEFAULT_GROUP@@book-service changed, schedule push for: 169.254.212.239:50198, agent: Nacos-Java-Client:v1.4.2, key: 169.254.212.239,50198,52009578652943
+
+2023-07-21 01:29:51,859 INFO send udp packet: 169.254.212.239,50198,52009578652943
+
+2023-07-21 01:29:51,861 ERROR [NACOS-PUSH] error while receiving ack data
+
+java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,50198,52009578652943, ack json: {"type": "push-ack", "lastRefTime":"52009578652943", "data":""}
 	at com.alibaba.nacos.naming.push.PushService$Receiver.run(PushService.java:680)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-07-19 00:53:20,567 INFO retry to push data, key: 169.254.212.239,53411,51358265713100
+2023-07-21 01:29:54,697 INFO DEFAULT_GROUP@@user-service is changed, add it to push queue.
 
-2023-07-19 00:53:20,567 WARN max re-push times reached, retry times 2, key: 169.254.212.239,53411,51358265713100
+2023-07-21 01:29:54,697 INFO serviceName: DEFAULT_GROUP@@user-service changed, schedule push for: 169.254.212.239:64546, agent: Nacos-Java-Client:v1.4.2, key: 169.254.212.239,64546,52012416751779
 
-2023-07-19 00:53:20,903 INFO retry to push data, key: 169.254.212.239,53411,51368614405811
+2023-07-21 01:29:54,697 INFO send udp packet: 169.254.212.239,64546,52012416751779
 
-2023-07-19 00:53:20,903 INFO send udp packet: 169.254.212.239,53411,51368614405811
+2023-07-21 01:29:54,699 ERROR [NACOS-PUSH] error while receiving ack data
 
-2023-07-19 00:53:20,904 WARN ack takes too long from /[0:0:0:0:0:ffff:a9fe:d4ef%16]:53411 ack json: {"type": "push-ack", "lastRefTime":"51368614405811", "data":""}
-
-2023-07-19 00:53:20,904 ERROR [NACOS-PUSH] error while receiving ack data
-
-java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,53411,51368614405811, ack json: {"type": "push-ack", "lastRefTime":"51368614405811", "data":""}
+java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,64546,52012416751779, ack json: {"type": "push-ack", "lastRefTime":"52012416751779", "data":""}
 	at com.alibaba.nacos.naming.push.PushService$Receiver.run(PushService.java:680)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-07-19 00:53:22,550 INFO retry to push data, key: 169.254.212.239,61669,51360251690997
+2023-07-21 01:29:55,778 INFO DEFAULT_GROUP@@user-service is changed, add it to push queue.
 
-2023-07-19 00:53:22,550 WARN max re-push times reached, retry times 2, key: 169.254.212.239,61669,51360251690997
+2023-07-21 01:29:55,778 INFO serviceName: DEFAULT_GROUP@@user-service changed, schedule push for: 169.254.212.239:64546, agent: Nacos-Java-Client:v1.4.2, key: 169.254.212.239,64546,52013498320666
 
-2023-07-19 00:53:25,715 INFO retry to push data, key: 169.254.212.239,56338,51363411562782
+2023-07-21 01:29:55,778 INFO send udp packet: 169.254.212.239,64546,52013498320666
 
-2023-07-19 00:53:25,715 WARN max re-push times reached, retry times 2, key: 169.254.212.239,56338,51363411562782
+2023-07-21 01:29:55,784 ERROR [NACOS-PUSH] error while receiving ack data
 
-2023-07-19 00:53:30,907 INFO retry to push data, key: 169.254.212.239,53411,51368614405811
-
-2023-07-19 00:53:30,907 WARN max re-push times reached, retry times 2, key: 169.254.212.239,53411,51368614405811
-
-2023-07-19 02:51:59,278 INFO DEFAULT_GROUP@@borrow-service is changed, add it to push queue.
-
-2023-07-19 02:51:59,279 INFO serviceName: DEFAULT_GROUP@@borrow-service changed, schedule push for: 169.254.212.239:53411, agent: Nacos-Java-Client:v1.4.2, key: 169.254.212.239,53411,58496999520749
-
-2023-07-19 02:51:59,279 INFO send udp packet: 169.254.212.239,53411,58496999520749
-
-2023-07-19 02:51:59,287 ERROR [NACOS-PUSH] error while receiving ack data
-
-java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,53411,58496999520749, ack json: {"type": "push-ack", "lastRefTime":"58496999520749", "data":""}
+java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,64546,52013498320666, ack json: {"type": "push-ack", "lastRefTime":"52013498320666", "data":""}
 	at com.alibaba.nacos.naming.push.PushService$Receiver.run(PushService.java:680)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-07-19 02:51:59,309 INFO DEFAULT_GROUP@@book-service is changed, add it to push queue.
+2023-07-21 01:29:57,309 INFO DEFAULT_GROUP@@borrow-service is changed, add it to push queue.
 
-2023-07-19 02:51:59,309 INFO serviceName: DEFAULT_GROUP@@book-service changed, schedule push for: 169.254.212.239:53411, agent: Nacos-Java-Client:v1.4.2, key: 169.254.212.239,53411,58497030094956
+2023-07-21 01:29:57,309 INFO serviceName: DEFAULT_GROUP@@borrow-service changed, schedule push for: 169.254.212.239:54922, agent: Nacos-Java-Client:v1.4.2, key: 169.254.212.239,54922,52015029545165
 
-2023-07-19 02:51:59,309 INFO send udp packet: 169.254.212.239,53411,58497030094956
+2023-07-21 01:29:57,310 INFO send udp packet: 169.254.212.239,54922,52015029545165
 
-2023-07-19 02:51:59,309 INFO serviceName: DEFAULT_GROUP@@book-service changed, schedule push for: 169.254.212.239:61669, agent: Nacos-Java-Client:v1.4.2, key: 169.254.212.239,61669,58497030094956
+2023-07-21 01:29:57,312 ERROR [NACOS-PUSH] error while receiving ack data
 
-2023-07-19 02:51:59,309 INFO send udp packet: 169.254.212.239,61669,58497030094956
-
-2023-07-19 02:51:59,310 ERROR [NACOS-PUSH] error while receiving ack data
-
-java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,61669,58497030094956, ack json: {"type": "push-ack", "lastRefTime":"58497030094956", "data":""}
+java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,54922,52015029545165, ack json: {"type": "push-ack", "lastRefTime":"52015029545165", "data":""}
 	at com.alibaba.nacos.naming.push.PushService$Receiver.run(PushService.java:680)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-07-19 02:51:59,315 ERROR [NACOS-PUSH] error while receiving ack data
+2023-07-21 01:30:01,870 INFO retry to push data, key: 169.254.212.239,50198,52009578652943
 
-java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,53411,58497030094956, ack json: {"type": "push-ack", "lastRefTime":"58497030094956", "data":""}
+2023-07-21 01:30:01,870 INFO send udp packet: 169.254.212.239,50198,52009578652943
+
+2023-07-21 01:30:01,871 WARN ack takes too long from /[0:0:0:0:0:ffff:a9fe:d4ef%16]:50198 ack json: {"type": "push-ack", "lastRefTime":"52009578652943", "data":""}
+
+2023-07-21 01:30:01,871 ERROR [NACOS-PUSH] error while receiving ack data
+
+java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,50198,52009578652943, ack json: {"type": "push-ack", "lastRefTime":"52009578652943", "data":""}
 	at com.alibaba.nacos.naming.push.PushService$Receiver.run(PushService.java:680)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-07-19 02:51:59,341 INFO DEFAULT_GROUP@@user-service is changed, add it to push queue.
+2023-07-21 01:30:04,712 INFO retry to push data, key: 169.254.212.239,64546,52012416751779
 
-2023-07-19 02:51:59,341 INFO serviceName: DEFAULT_GROUP@@user-service changed, schedule push for: 169.254.212.239:53411, agent: Nacos-Java-Client:v1.4.2, key: 169.254.212.239,53411,58497062098115
+2023-07-21 01:30:04,712 INFO send udp packet: 169.254.212.239,64546,52012416751779
 
-2023-07-19 02:51:59,341 INFO send udp packet: 169.254.212.239,53411,58497062098115
+2023-07-21 01:30:05,794 INFO retry to push data, key: 169.254.212.239,64546,52013498320666
 
-2023-07-19 02:51:59,341 INFO serviceName: DEFAULT_GROUP@@user-service changed, schedule push for: 169.254.212.239:56338, agent: Nacos-Java-Client:v1.4.2, key: 169.254.212.239,56338,58497062098115
+2023-07-21 01:30:05,794 INFO send udp packet: 169.254.212.239,64546,52013498320666
 
-2023-07-19 02:51:59,341 INFO send udp packet: 169.254.212.239,56338,58497062098115
+2023-07-21 01:30:07,312 INFO retry to push data, key: 169.254.212.239,54922,52015029545165
 
-2023-07-19 02:51:59,347 ERROR [NACOS-PUSH] error while receiving ack data
+2023-07-21 01:30:07,312 INFO send udp packet: 169.254.212.239,54922,52015029545165
 
-java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,53411,58497062098115, ack json: {"type": "push-ack", "lastRefTime":"58497062098115", "data":""}
+2023-07-21 01:30:07,313 WARN ack takes too long from /[0:0:0:0:0:ffff:a9fe:d4ef%16]:54922 ack json: {"type": "push-ack", "lastRefTime":"52015029545165", "data":""}
+
+2023-07-21 01:30:07,313 ERROR [NACOS-PUSH] error while receiving ack data
+
+java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,54922,52015029545165, ack json: {"type": "push-ack", "lastRefTime":"52015029545165", "data":""}
 	at com.alibaba.nacos.naming.push.PushService$Receiver.run(PushService.java:680)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-07-19 02:51:59,347 ERROR [NACOS-PUSH] error while receiving ack data
+2023-07-21 01:30:10,780 INFO DEFAULT_GROUP@@borrow-service is changed, add it to push queue.
 
-java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,56338,58497062098115, ack json: {"type": "push-ack", "lastRefTime":"58497062098115", "data":""}
+2023-07-21 01:30:10,780 INFO serviceName: DEFAULT_GROUP@@borrow-service changed, schedule push for: 169.254.212.239:54922, agent: Nacos-Java-Client:v1.4.2, key: 169.254.212.239,54922,52028500149111
+
+2023-07-21 01:30:10,780 INFO send udp packet: 169.254.212.239,54922,52028500149111
+
+2023-07-21 01:30:10,782 ERROR [NACOS-PUSH] error while receiving ack data
+
+java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,54922,52028500149111, ack json: {"type": "push-ack", "lastRefTime":"52028500149111", "data":""}
 	at com.alibaba.nacos.naming.push.PushService$Receiver.run(PushService.java:680)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-07-19 02:52:02,990 INFO DEFAULT_GROUP@@borrow-service is changed, add it to push queue.
+2023-07-21 01:30:11,886 INFO retry to push data, key: 169.254.212.239,50198,52009578652943
 
-2023-07-19 02:52:02,990 INFO serviceName: DEFAULT_GROUP@@borrow-service changed, schedule push for: 169.254.212.239:53411, agent: Nacos-Java-Client:v1.4.2, key: 169.254.212.239,53411,58500710691931
+2023-07-21 01:30:11,886 WARN max re-push times reached, retry times 2, key: 169.254.212.239,50198,52009578652943
 
-2023-07-19 02:52:02,990 INFO send udp packet: 169.254.212.239,53411,58500710691931
+2023-07-21 01:30:14,718 INFO retry to push data, key: 169.254.212.239,64546,52012416751779
 
-2023-07-19 02:52:02,991 ERROR [NACOS-PUSH] error while receiving ack data
+2023-07-21 01:30:14,718 WARN max re-push times reached, retry times 2, key: 169.254.212.239,64546,52012416751779
 
-java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,53411,58500710691931, ack json: {"type": "push-ack", "lastRefTime":"58500710691931", "data":""}
+2023-07-21 01:30:15,800 INFO retry to push data, key: 169.254.212.239,64546,52013498320666
+
+2023-07-21 01:30:15,800 WARN max re-push times reached, retry times 2, key: 169.254.212.239,64546,52013498320666
+
+2023-07-21 01:30:17,318 INFO retry to push data, key: 169.254.212.239,54922,52015029545165
+
+2023-07-21 01:30:17,318 WARN max re-push times reached, retry times 2, key: 169.254.212.239,54922,52015029545165
+
+2023-07-21 01:30:20,790 INFO retry to push data, key: 169.254.212.239,54922,52028500149111
+
+2023-07-21 01:30:20,790 INFO send udp packet: 169.254.212.239,54922,52028500149111
+
+2023-07-21 01:30:20,791 WARN ack takes too long from /[0:0:0:0:0:ffff:a9fe:d4ef%16]:54922 ack json: {"type": "push-ack", "lastRefTime":"52028500149111", "data":""}
+
+2023-07-21 01:30:20,791 ERROR [NACOS-PUSH] error while receiving ack data
+
+java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,54922,52028500149111, ack json: {"type": "push-ack", "lastRefTime":"52028500149111", "data":""}
 	at com.alibaba.nacos.naming.push.PushService$Receiver.run(PushService.java:680)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-07-19 02:52:09,294 INFO retry to push data, key: 169.254.212.239,53411,58496999520749
+2023-07-21 01:30:30,799 INFO retry to push data, key: 169.254.212.239,54922,52028500149111
 
-2023-07-19 02:52:09,294 INFO send udp packet: 169.254.212.239,53411,58496999520749
+2023-07-21 01:30:30,799 WARN max re-push times reached, retry times 2, key: 169.254.212.239,54922,52028500149111
 
-2023-07-19 02:52:09,310 INFO retry to push data, key: 169.254.212.239,53411,58497030094956
+2023-07-21 01:31:15,591 INFO DEFAULT_GROUP@@user-service is changed, add it to push queue.
 
-2023-07-19 02:52:09,310 INFO send udp packet: 169.254.212.239,53411,58497030094956
+2023-07-21 01:31:15,591 INFO serviceName: DEFAULT_GROUP@@user-service changed, schedule push for: 169.254.212.239:51297, agent: Nacos-Java-Client:v1.4.2, key: 169.254.212.239,51297,52093311410249
 
-2023-07-19 02:52:09,326 INFO retry to push data, key: 169.254.212.239,61669,58497030094956
+2023-07-21 01:31:15,591 INFO send udp packet: 169.254.212.239,51297,52093311410249
 
-2023-07-19 02:52:09,326 INFO send udp packet: 169.254.212.239,61669,58497030094956
+2023-07-21 01:31:15,593 ERROR [NACOS-PUSH] error while receiving ack data
 
-2023-07-19 02:52:09,342 INFO retry to push data, key: 169.254.212.239,53411,58497062098115
+java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,51297,52093311410249, ack json: {"type": "push-ack", "lastRefTime":"52093311410249", "data":""}
+	at com.alibaba.nacos.naming.push.PushService$Receiver.run(PushService.java:680)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-21 01:31:25,603 INFO retry to push data, key: 169.254.212.239,51297,52093311410249
 
-2023-07-19 02:52:09,342 INFO send udp packet: 169.254.212.239,53411,58497062098115
+2023-07-21 01:31:25,603 INFO send udp packet: 169.254.212.239,51297,52093311410249
 
-2023-07-19 02:52:09,342 INFO retry to push data, key: 169.254.212.239,56338,58497062098115
+2023-07-21 01:31:25,604 WARN ack takes too long from /[0:0:0:0:0:ffff:a9fe:d4ef%16]:51297 ack json: {"type": "push-ack", "lastRefTime":"52093311410249", "data":""}
 
-2023-07-19 02:52:09,342 INFO send udp packet: 169.254.212.239,56338,58497062098115
+2023-07-21 01:31:25,604 ERROR [NACOS-PUSH] error while receiving ack data
 
-2023-07-19 02:52:13,005 INFO retry to push data, key: 169.254.212.239,53411,58500710691931
+java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,51297,52093311410249, ack json: {"type": "push-ack", "lastRefTime":"52093311410249", "data":""}
+	at com.alibaba.nacos.naming.push.PushService$Receiver.run(PushService.java:680)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-21 01:31:35,611 INFO retry to push data, key: 169.254.212.239,51297,52093311410249
 
-2023-07-19 02:52:13,005 INFO send udp packet: 169.254.212.239,53411,58500710691931
+2023-07-21 01:31:35,611 WARN max re-push times reached, retry times 2, key: 169.254.212.239,51297,52093311410249
 
-2023-07-19 02:52:19,299 INFO retry to push data, key: 169.254.212.239,53411,58496999520749
+2023-07-21 01:33:32,552 INFO DEFAULT_GROUP@@borrow-service is changed, add it to push queue.
 
-2023-07-19 02:52:19,299 WARN max re-push times reached, retry times 2, key: 169.254.212.239,53411,58496999520749
+2023-07-21 01:33:32,552 INFO serviceName: DEFAULT_GROUP@@borrow-service changed, schedule push for: 169.254.212.239:54922, agent: Nacos-Java-Client:v1.4.2, key: 169.254.212.239,54922,52230271721475
 
-2023-07-19 02:52:19,315 INFO retry to push data, key: 169.254.212.239,53411,58497030094956
+2023-07-21 01:33:32,552 INFO send udp packet: 169.254.212.239,54922,52230271721475
 
-2023-07-19 02:52:19,315 WARN max re-push times reached, retry times 2, key: 169.254.212.239,53411,58497030094956
+2023-07-21 01:33:32,558 ERROR [NACOS-PUSH] error while receiving ack data
 
-2023-07-19 02:52:19,331 INFO retry to push data, key: 169.254.212.239,61669,58497030094956
+java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,54922,52230271721475, ack json: {"type": "push-ack", "lastRefTime":"52230271721475", "data":""}
+	at com.alibaba.nacos.naming.push.PushService$Receiver.run(PushService.java:680)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-21 01:33:32,567 INFO DEFAULT_GROUP@@book-service is changed, add it to push queue.
 
-2023-07-19 02:52:19,331 WARN max re-push times reached, retry times 2, key: 169.254.212.239,61669,58497030094956
+2023-07-21 01:33:32,567 INFO serviceName: DEFAULT_GROUP@@book-service changed, schedule push for: 169.254.212.239:50198, agent: Nacos-Java-Client:v1.4.2, key: 169.254.212.239,50198,52230287247122
 
-2023-07-19 02:52:19,347 INFO retry to push data, key: 169.254.212.239,53411,58497062098115
+2023-07-21 01:33:32,567 INFO send udp packet: 169.254.212.239,50198,52230287247122
 
-2023-07-19 02:52:19,347 WARN max re-push times reached, retry times 2, key: 169.254.212.239,53411,58497062098115
+2023-07-21 01:33:32,568 ERROR [NACOS-PUSH] error while receiving ack data
 
-2023-07-19 02:52:19,347 INFO retry to push data, key: 169.254.212.239,56338,58497062098115
+java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,50198,52230287247122, ack json: {"type": "push-ack", "lastRefTime":"52230287247122", "data":""}
+	at com.alibaba.nacos.naming.push.PushService$Receiver.run(PushService.java:680)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-21 01:33:32,599 INFO DEFAULT_GROUP@@user-service is changed, add it to push queue.
 
-2023-07-19 02:52:19,347 WARN max re-push times reached, retry times 2, key: 169.254.212.239,56338,58497062098115
+2023-07-21 01:33:32,599 INFO serviceName: DEFAULT_GROUP@@user-service changed, schedule push for: 169.254.212.239:51297, agent: Nacos-Java-Client:v1.4.2, key: 169.254.212.239,51297,52230319218643
 
-2023-07-19 02:52:23,020 INFO retry to push data, key: 169.254.212.239,53411,58500710691931
+2023-07-21 01:33:32,599 INFO send udp packet: 169.254.212.239,51297,52230319218643
 
-2023-07-19 02:52:23,020 WARN max re-push times reached, retry times 2, key: 169.254.212.239,53411,58500710691931
+2023-07-21 01:33:32,605 ERROR [NACOS-PUSH] error while receiving ack data
+
+java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,51297,52230319218643, ack json: {"type": "push-ack", "lastRefTime":"52230319218643", "data":""}
+	at com.alibaba.nacos.naming.push.PushService$Receiver.run(PushService.java:680)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-21 01:33:35,704 INFO DEFAULT_GROUP@@borrow-service is changed, add it to push queue.
+
+2023-07-21 01:33:35,704 INFO serviceName: DEFAULT_GROUP@@borrow-service changed, schedule push for: 169.254.212.239:54922, agent: Nacos-Java-Client:v1.4.2, key: 169.254.212.239,54922,52233424142314
+
+2023-07-21 01:33:35,704 INFO send udp packet: 169.254.212.239,54922,52233424142314
+
+2023-07-21 01:33:35,705 ERROR [NACOS-PUSH] error while receiving ack data
+
+java.lang.IllegalStateException: unable to find ackEntry for key: 0:0:0:0:0:ffff:a9fe:d4ef%16,54922,52233424142314, ack json: {"type": "push-ack", "lastRefTime":"52233424142314", "data":""}
+	at com.alibaba.nacos.naming.push.PushService$Receiver.run(PushService.java:680)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-21 01:33:42,566 INFO retry to push data, key: 169.254.212.239,54922,52230271721475
+
+2023-07-21 01:33:42,566 INFO send udp packet: 169.254.212.239,54922,52230271721475
+
+2023-07-21 01:33:42,582 INFO retry to push data, key: 169.254.212.239,50198,52230287247122
+
+2023-07-21 01:33:42,582 INFO send udp packet: 169.254.212.239,50198,52230287247122
+
+2023-07-21 01:33:42,614 INFO retry to push data, key: 169.254.212.239,51297,52230319218643
+
+2023-07-21 01:33:42,614 INFO send udp packet: 169.254.212.239,51297,52230319218643
+
+2023-07-21 01:33:45,706 INFO retry to push data, key: 169.254.212.239,54922,52233424142314
+
+2023-07-21 01:33:45,706 INFO send udp packet: 169.254.212.239,54922,52233424142314
+
+2023-07-21 01:33:52,567 INFO retry to push data, key: 169.254.212.239,54922,52230271721475
+
+2023-07-21 01:33:52,567 WARN max re-push times reached, retry times 2, key: 169.254.212.239,54922,52230271721475
+
+2023-07-21 01:33:52,583 INFO retry to push data, key: 169.254.212.239,50198,52230287247122
+
+2023-07-21 01:33:52,583 WARN max re-push times reached, retry times 2, key: 169.254.212.239,50198,52230287247122
+
+2023-07-21 01:33:52,615 INFO retry to push data, key: 169.254.212.239,51297,52230319218643
+
+2023-07-21 01:33:52,615 WARN max re-push times reached, retry times 2, key: 169.254.212.239,51297,52230319218643
+
+2023-07-21 01:33:55,717 INFO retry to push data, key: 169.254.212.239,54922,52233424142314
+
+2023-07-21 01:33:55,717 WARN max re-push times reached, retry times 2, key: 169.254.212.239,54922,52233424142314
 

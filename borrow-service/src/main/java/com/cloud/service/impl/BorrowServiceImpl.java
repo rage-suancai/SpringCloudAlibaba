@@ -8,6 +8,8 @@ import com.cloud.service.client.UserClient;
 import com.entity.Book;
 import com.entity.Borrow;
 import com.entity.User;
+import io.seata.core.context.RootContext;
+import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -39,8 +41,11 @@ public class BorrowServiceImpl implements BorrowService {
 
     }
 
+    @GlobalTransactional
     @Override
     public boolean doBorrow(Integer uid, Integer bid) {
+
+        System.err.println(RootContext.getXID());
 
         if (bookClient.bookRemain(bid) < 1) throw new RuntimeException("图书数量不足");
         if (userClient.userRemain(uid) < 1) throw new RuntimeException("用户借阅额度不足");

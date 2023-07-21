@@ -8,9 +8,20 @@ spring:
       config:
         file-extension: yaml
         server-addr: localhost:8848
-    sentinel:
-      transport:
-        dashboard: localhost:8858
-      web-context-unify: false
+    loadbalancer:
+      nacos:
+        enabled: true
+#    sentinel:
+#      transport:
+#        dashboard: localhost:8858
+#      web-context-unify: false
 #      block-page: /blocked
+
+seata:
+  service:
+    vgroup-mapping:
+      borrow-service-seata-service-group: default
+    grouplist:
+      default: localhost:7091
+
 

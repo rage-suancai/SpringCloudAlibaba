@@ -14,4 +14,11 @@
 #      discovery:
 #        server-addr: localhost:8848
 
+#seata:
+#  service:
+#    vgroup-mapping:
+#      book-service-seata-service-group: default
+#    grouplist:
+#      default: localhost:7091
+
 
