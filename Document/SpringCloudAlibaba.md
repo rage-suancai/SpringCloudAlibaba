@@ -1,4 +1,4 @@
-<img src="https://fast.itbaima.net/2023/03/06/V1dFqQMR7T2GzSJ.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/V1dFqQMR7T2GzSJ.png"/>
 
 ### 微服务进阶
 前面我们了解了微服务的一套解决方案 但是它是基于Netflix的解决方案 实际上我们发现 很多框架都已经停止维护了 来看看目前我们所认识到的SpringCloud各大组件的维护情况

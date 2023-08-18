@@ -1,4 +1,4 @@
-<img src="https://fast.itbaima.net/2023/03/06/xnmustzRkFZJWIP.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/xnmustzRkFZJWIP.png"/>
 
 ### Sentinel 流量防卫兵
 注意: 这一章有点小绕 思路理清
@@ -17,19 +17,19 @@ Sentinel 具有以下特征:
 ### 安装与部署
 和Nacos一样 它是独立安装和部署的 下载地址: https://github.com/alibaba/Sentinel/releases
 
-<img src="https://fast.itbaima.net/2023/03/06/oZdLMAJaCD3Uw9F.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/oZdLMAJaCD3Uw9F.png"/>
 
 注意: 下载下来之后是一个jar文件(其实就是个SpringBoot项目) 我们需要在IDEA中添加一些运行配置:
 
-<img src="https://fast.itbaima.net/2023/03/06/Hjm4Z38s95YiFvI.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/Hjm4Z38s95YiFvI.png"/>
 
 接着就可以直接启动啦 当然默认端口占用8080 如果需要修改 可以添加环境变量:
 
-<img src="https://fast.itbaima.net/2023/03/06/RfVAdtOqJjWlx6E.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/RfVAdtOqJjWlx6E.png"/>
 
 启动之后 就可以访问到Sentinel的监控页面了 用户名和密码都是sentinel 地址: http://localhost:8858/#/dashboard
 
-<img src="https://fast.itbaima.net/2023/03/06/QpVRTYtBX6kvj2b.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/QpVRTYtBX6kvj2b.png"/>
 
 这样就成功开启监控页面了 接着我们需要让我们的服务连接到Sentinel控制台 老规矩 导入依赖:
 
@@ -58,9 +58,9 @@ Sentinel 具有以下特征:
 
 现在启动我们的服务 然后访问一次服务 这样Sentinel中就会存在信息了(懒加载机制 不会一上来就加载):
 
-<img src="https://fast.itbaima.net/2023/03/06/p4KTaDd1wc5BR92.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/p4KTaDd1wc5BR92.png"/>
 
-<img src="https://fast.itbaima.net/2023/03/06/pzOus21AWqLfr9k.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/pzOus21AWqLfr9k.png"/>
 
 现在我们就可以在Sentinel控制台中对我们的服务运行情况进行实时监控了 可以看到监控的内容非常的多 包括时间点, QPS(每秒查询率), 响应时间等数据
 
@@ -82,7 +82,7 @@ Sentinel 具有以下特征:
 1. `漏桶算法`
     顾名思义 就像一个桶开了一个小孔 水流进桶中的速度肯定是远大于水流出桶的速度的 这也是最简单的一种限流思路:
 
-    <img src="https://fast.itbaima.net/2023/03/06/dMZVz3kDRxYaHg5.png"/>
+    <img src="https://image.itbaima.net/markdown/2023/03/06/dMZVz3kDRxYaHg5.png"/>
 
     我们知道 桶是有容量的 所以当桶的容量已满时 就装不下水了 这时只有丢放请求了
     利用这种思想 我们就可以写出一个简单的限流算法
@@ -92,7 +92,7 @@ Sentinel 具有以下特征:
     只能有点像信号量机制 现在有一个令牌桶 这个桶是专门存放令牌的 每隔一段时间就向桶中丢一个令牌(速度由我们指定) 当新的请求到达时
     将从桶中删除令牌 接着请求就可以通过并给到服务 但是如果桶中的令牌数量不足 那么不会删除令牌 而是让此数据包等待
     
-    <img src="https://fast.itbaima.net/2023/03/06/F1RxtgBZNQvWpw8.png"/>
+    <img src="https://image.itbaima.net/markdown/2023/03/06/F1RxtgBZNQvWpw8.png"/>
 
     可以试想一下 当流量下降时 令牌桶中的令牌会逐渐积累 这样如果突然出现高并发 那么就能在短时间内拿到大量的令牌
 
@@ -100,7 +100,7 @@ Sentinel 具有以下特征:
 3. `固定时间窗口算法`
     我们可以对某一个时间段内的请求进行统计和计数 比如在14:15到14:16这一分钟内 请求量不能超过100 也就是一分钟之内不能超过100次请求 那么就可以像下面这样进行划分:
 
-    <img src="https://fast.itbaima.net/2023/03/06/XRnKgCivsqFE2ax.png"/>
+    <img src="https://image.itbaima.net/markdown/2023/03/06/XRnKgCivsqFE2ax.png"/>
 
     虽然这种模式看似比较合理 但是试想一下这种情况:
     - 14:15:59的时候来了100个请求
@@ -115,13 +115,13 @@ Sentinel 具有以下特征:
 4. `滑动时间窗口算法`
     相当于固定窗口算法 滑动时间窗口算法更加灵活 它会动态移动窗口 重新进行计算:
 
-    <img src="https://fast.itbaima.net/2023/03/06/8MyG3WDo1wSBb5Y.png"/>
+    <img src="https://image.itbaima.net/markdown/2023/03/06/8MyG3WDo1wSBb5Y.png"/>
 
     虽然这样能够避免固定时间窗口的临界问题 但是这样显然比固定窗口更加耗时的
 
 好了 了解完了我们的限流策略和判定方法之后 我们在Sentinel中进行实际测试一下 打开管理页面的簇点链路模块
 
-<img src="https://fast.itbaima.net/2023/03/06/4fPg72OJiwhDycL.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/4fPg72OJiwhDycL.png"/>
 
 这里演示对我们的借阅即可进行限流 点击流控 会看到让我们添加流控规则:
 - 阈值类型: QPS就是每秒钟的请求数量 并发线程数是按照服务当前使用的线程数据进行统计的
@@ -130,7 +130,7 @@ Sentinel 具有以下特征:
 
 这里我们选择QPS, 阈值设定为1 流控模式选择直接, 流控效果选择快速失败 可以看到 当我们快速地进行请求时 会直接返回失败信息:
 
-<img src="https://fast.itbaima.net/2023/03/06/Lrw7ZJNzyDUoYG8.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/Lrw7ZJNzyDUoYG8.png"/>
 
 这里各位最好自行尝试一下其他的流控效果 熟悉和加深印象
 
@@ -141,15 +141,15 @@ Sentinel 具有以下特征:
 
 我们首先来看看关联 比如现在我们对自带的/error接口进行限流:
 
-<img src="https://fast.itbaima.net/2023/03/06/E9vnJRTPZmzaW8V.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/E9vnJRTPZmzaW8V.png"/>
 
 注意: 限流是作用于关联资源的 一旦发现关联资源超过阈值 那么就会对当前的资源进行限流 我们现在来测试一下 这里使用PostMan的Runner连续对关联资源发起请求:
 
-<img src="https://fast.itbaima.net/2023/03/06/QgqsxdvYF59P7ne.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/QgqsxdvYF59P7ne.png"/>
 
 开启Postman 然后我们会发现借阅服务已经凉凉:
 
-<img src="https://fast.itbaima.net/2023/03/06/tnKXB2JUarehk5T.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/tnKXB2JUarehk5T.png"/>
 
 当我们关闭掉Postman的任务后 恢复正常
 
@@ -220,20 +220,20 @@ Sentinel 具有以下特征:
 
 然后我们在Sentinel控制台中添加流控规则 注意是针对此方法 可以看到已经自动识别到borrow接口下调用了这个方法:
 
-<img src="https://fast.itbaima.net/2023/03/06/FOzJdtoieAxIvPq.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/FOzJdtoieAxIvPq.png"/>
 
 最后我们在浏览器中对这两个接口都进行测试 会发现 无论请求哪个接口 只要调用了Service中的
 getUserBorrowDetailByUid这个方法都会被限流 注意限流的形式是后台直接抛出异常 至于怎么处理我们后面再说
 
 那么这个链路选项实际上就是决定只限流从哪个方向来的调用 比如我们只对borrow2这个接口对getUserBorrowDetailByUid方法的调用进行限流 那么我们就可以为其指定链路:
 
-<img src="https://fast.itbaima.net/2023/03/06/UHbcgSWV2exNCu1.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/UHbcgSWV2exNCu1.png"/>
 
 然后我们会发现 限流效果只对我们配置的链路接口有效 而其它链路是不会被限流的
 
 除了直接对接口进行限流规则控制之外 我们也可以根据当前系统的资源使用情况 决定是否进行限流:
 
-<img src="https://fast.itbaima.net/2023/03/06/MHiDyU54L3QsNrc.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/MHiDyU54L3QsNrc.png"/>
 
 系统规则支持以下的模式:
 - Load自适应(仅对Linux/Unix-like机器生效): 系统的load1作为启发指标 进行自适应系统保护 当系统load1超过设定的启发值 且系统当前估的并发线程数超过算的系统容量时才会触发系统保护(BBR 阶段) 系统容量由系统的 maxQps * minRt估算得出 设定参考值一般是: CPU cores * 2.5
@@ -276,7 +276,7 @@ getUserBorrowDetailByUid这个方法都会被限流 注意限流的形式是后�
 
 这样 当被限流时 就会被重定向到指定页面:
 
-<img src="https://fast.itbaima.net/2023/03/06/PfVOQWJrTiZGqh7.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/PfVOQWJrTiZGqh7.png"/>
 
 那么 对于方法级别的限流呢? 经过前面的学习我们知道 当某个方法被限流时 会直接在后台抛出异常 那么这种情况我们该怎么处理呢?
 比如我们之前在Hystrix中可以直接添加一个替代方案 这样当出现异常时会直接执行我们的替代方法并返回 Sentinel也可以:
@@ -305,7 +305,7 @@ getUserBorrowDetailByUid这个方法都会被限流 注意限流的形式是后�
 
 可以看到 一旦被限流将执行替代方案 最后返回的结果就是:
 
-<img src="https://fast.itbaima.net/2023/03/06/p1Y53LPihOGZjBV.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/p1Y53LPihOGZjBV.png"/>
 
 注意blockHandler只能处理限流情况下抛出的异常 包括下面即将要介绍的热点参数限流也是同理 如果是方法本身抛出的其他类型异常 不在管控范围内 但是可以通过其他参数进行处理:
 
@@ -326,7 +326,7 @@ getUserBorrowDetailByUid这个方法都会被限流 注意限流的形式是后�
 
 这样 其他的异常也可以有替代方案了:
 
-<img src="https://fast.itbaima.net/2023/03/06/pk1HjSi9VyxwOJQ.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/pk1HjSi9VyxwOJQ.png"/>
 
 特别注意这种方式会在没有配置blockHandler的情况下 将Sentinel机制内(也就是限流的异常)的异常也一并处理了
 如果配置了blockHandler 那么在出现限流时 依然只会执行blockHandler指定的替代方案(因为限流是在方法执行之前进行的)
@@ -353,28 +353,28 @@ getUserBorrowDetailByUid这个方法都会被限流 注意限流的形式是后�
 
 启动后 我们在Sentinel里面进行热点配置:
 
-<img src="https://fast.itbaima.net/2023/03/06/fIlhGM3jPxb7wgS.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/fIlhGM3jPxb7wgS.png"/>
 
 然后开始访问我们的测试接口 可以看到在携带参数a时 当访问频率超过设定值 就会直接被限流 这里是直接在后台抛出异常:
 
-<img src="https://fast.itbaima.net/2023/03/06/hskQVKnE2y5PftO.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/hskQVKnE2y5PftO.png"/>
 
-<img src="https://fast.itbaima.net/2023/03/06/nC6W5T4OGcJNypA.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/nC6W5T4OGcJNypA.png"/>
 
 而我们使用其他参数或是不带a参数 那么就不会出现这种问题了:
 
-<img src="https://fast.itbaima.net/2023/03/06/WVguflyZ43NxE7j.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/WVguflyZ43NxE7j.png"/>
 
 除了直接对某个参数精准限流外 我们还可以对参数携带的指定值单独设定阈值 比如我们现在不仅希望对参数a限流 而且还希望当参数a的值为10时 QPS达到5再进行限流 那么就可以设定例外:
 
-<img src="https://fast.itbaima.net/2023/03/06/oipjTJBHsMSdDvc.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/oipjTJBHsMSdDvc.png"/>
 
 这样 当请求携带参数a 且参数a的值为10时 阈值将按照我们指定的特例进行计算
 
 ### 服务熔断和降级
 还记得我们前所说的服务降级吗 也就是说我们需要在整个微服务调用链路出现问题的时候 及时对服务进行降级 以防止问题进一步恶化
 
-<img src="https://fast.itbaima.net/2023/03/06/AxrzjvtPWJ2YCZI.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/AxrzjvtPWJ2YCZI.png"/>
 
 那么各位是否有思考过 如果在某一时刻 服务B出现故障(可能就卡在那里了) 而这时服务A仍然有大量的请求 在调用服务B
 那么 由于服务A没办法再短时间内完成处理 新来的请求就会导致线程数不断地增加 这样 CPU的资源很快就会被耗尽
@@ -385,7 +385,7 @@ getUserBorrowDetailByUid这个方法都会被限流 注意限流的形式是后�
    线程池隔离实际上就是对每个服务的远程调用单独开放线程池 比如服务A要调用服务B 那么只基于固定数量的线程池
    这样即使在短时间内出现大量请求 由于没有线程可以分配 所以就不会导致资源耗尽了
 
-   <img src="https://fast.itbaima.net/2023/03/06/CbYxA3d7w46OlMm.png"/>
+   <img src="https://image.itbaima.net/markdown/2023/03/06/CbYxA3d7w46OlMm.png"/>
 
 
 2. `信号量隔离`
@@ -397,7 +397,7 @@ getUserBorrowDetailByUid这个方法都会被限流 注意限流的形式是后�
 
 好了 说回我们的熔断和降级 当下游服务因为某种原因变得不可用或响应过慢时 上游服务为了保证自己整体服务的可用性 不再继续调用目标服务而是快速返回或是执行自己的替代方案 这便是服务降级
 
-<img src="https://fast.itbaima.net/2023/03/06/gY62LD3vw157WiU.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/gY62LD3vw157WiU.png"/>
 
 整个过程分为三个状态:
 - 关闭: 熔断器不工作 所有请求全部该干嘛干嘛
@@ -406,7 +406,7 @@ getUserBorrowDetailByUid这个方法都会被限流 注意限流的形式是后�
 
 那么我们来看看Sentinel中如何进行熔断和降级操作 打开管理页面 我们可以自由新增熔断规则:
 
-<img src="https://fast.itbaima.net/2023/03/06/7BW6LGXQNl5b1Iv.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/7BW6LGXQNl5b1Iv.png"/>
 
 其中 熔断策略有三种模式:
 
@@ -425,11 +425,11 @@ getUserBorrowDetailByUid这个方法都会被限流 注意限流的形式是后�
 
     重启 然后我们创建一个新的熔断规则:
 
-    <img src="https://fast.itbaima.net/2023/03/06/ExWIKFSNpPoksiT.png"/>
+    <img src="https://image.itbaima.net/markdown/2023/03/06/ExWIKFSNpPoksiT.png"/>
 
     可以看到 超时直接触发了熔断 进入到阻止页面:
 
-    <img src="https://fast.itbaima.net/2023/03/06/CmdPgcqvX4a2u9p.png"/>
+    <img src="https://image.itbaima.net/markdown/2023/03/06/CmdPgcqvX4a2u9p.png"/>
 
 
 2. `异常比例`
@@ -442,23 +442,23 @@ getUserBorrowDetailByUid这个方法都会被限流 注意限流的形式是后�
 
     启动服务器 接着添加我们到达熔断规则:
 
-    <img src="https://fast.itbaima.net/2023/03/06/Dz3EgG9eH4UXTkJ.png"/>
+    <img src="https://image.itbaima.net/markdown/2023/03/06/Dz3EgG9eH4UXTkJ.png"/>
 
     现在我们进行访问 会发现后台疯狂报错 然后就熔断了:
 
-    <img src="https://fast.itbaima.net/2023/03/06/jSp92ODTRhlxJsn.png"/>
+    <img src="https://image.itbaima.net/markdown/2023/03/06/jSp92ODTRhlxJsn.png"/>
 
-    <img src="https://fast.itbaima.net/2023/03/06/FfhalnZdS2ujm1t.png"/>
+    <img src="https://image.itbaima.net/markdown/2023/03/06/FfhalnZdS2ujm1t.png"/>
 
 
 3. `异常数`
     这个和上面的唯一区别就是 只要达到指定的异常数量 就熔断 这里我们修改一下熔断规则:
 
-    <img src="https://fast.itbaima.net/2023/03/06/CugOUozGA6inB3R.png"/>
+    <img src="https://image.itbaima.net/markdown/2023/03/06/CugOUozGA6inB3R.png"/>
 
     现在我们再次不断访问此接口 可以发现 效果跟之前其实是差不多的 只是判断的策略稍微不同罢了:
 
-    <img src="https://fast.itbaima.net/2023/03/06/XC1VekDfainIpv6.png"/>
+    <img src="https://image.itbaima.net/markdown/2023/03/06/XC1VekDfainIpv6.png"/>
 
 那么熔断规则如何设定我们了解了 那么 如何自定义服务降级呢? 之前在使用Hystrix的时候 如果出现异常 可以执行我们的替代方案 Sentinel也是可以的
 
@@ -480,11 +480,11 @@ getUserBorrowDetailByUid这个方法都会被限流 注意限流的形式是后�
 
 接着我们对进行熔断配置 注意是对我们添加的@SentinelResource中指定名称的findUserBorrows2进行配置:
 
-<img src="https://fast.itbaima.net/2023/03/06/QkofY5gzwSr6WGn.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/QkofY5gzwSr6WGn.png"/>
 
 OK 可以看到熔断之后 服务降级之后的效果:
 
-<img src="https://fast.itbaima.net/2023/03/06/5kLcAaT6wJgYXGx.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/5kLcAaT6wJgYXGx.png"/>
 
 最后我们来看一下如何让Feign的也支持Sentinel 前面我们使用Hystrix的时候 就可以直接对Feign的每个接口调用单独进行服务降级 而使用Sentinel 也是可以的 首先我们需要在配置文件中开启支持:
 
@@ -514,7 +514,7 @@ OK 可以看到熔断之后 服务降级之后的效果:
 
 然后直接启动就可以了 中途的时候我们吧用户服务全部下掉 可以看到正常使用替代方案:
 
-<img src="https://fast.itbaima.net/2023/03/06/M2yZpJLfs1i9adC.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/M2yZpJLfs1i9adC.png"/>
 
 这样Feign的配置就OK了 那么传统的RestTemplate呢? 我们可以使用@SentinelRestTemplate注解实现:
 

@@ -1,4 +1,4 @@
-<img src="	https://fast.itbaima.net/2023/03/06/8OCeNap2Vy6X7WH.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/8OCeNap2Vy6X7WH.png"/>
 
 ### Seata与分布式事务
 重难点内容 坑也多得离谱 最好保持跟我一样的版本 官方文档: https://seata.io/zh-cn/docs/overview/what-is-seata.html
@@ -13,13 +13,13 @@
 先调用库存服务对库存进行减扣 -> 然后订单开始下单 -> 最后用户服务进行扣款 虽然看似是一个很简单的一个流程 但是如果没有事务的加持
 很有可能会由于中途出错 比如整个流程中订单服务出现问题 那么就会导致库存扣了 但是实际上这个订单并没有生成 用户也没有付款
 
-<img src="https://fast.itbaima.net/2023/03/06/AiEXC3wBflPxHGT.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/AiEXC3wBflPxHGT.png"/>
 
 上面这种情况时间就是一种多服务多数据源的分布式事务模型(比较常见) 因此 为了解决这种情况 我们就得实现分布式事务 让这整个流程保证原子性
 
 SpringCloud Alibaba为我们提供了用于处理分布式事务的组件Seata
 
-<img src="https://fast.itbaima.net/2023/03/06/jDAy7osQ5YIqruP.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/jDAy7osQ5YIqruP.png"/>
 
 seata 是一款开源的分布式事务解决方案 致力于提供高性能和简单易用的分布式事务服务 Seata将为用户提供了AT, TCC, SAGA 和 XA事务模式为用户打造一站式的分布式解决方案
 
@@ -33,11 +33,11 @@ seata 是一款开源的分布式事务解决方案 致力于提供高性能和�
 
 那么首先我们对数据库进行修改 这里为了简便 就直接在用户表中添加一个字段用于存储用户能够借阅的书籍数量:
 
-<img src="https://fast.itbaima.net/2023/03/06/TvJL2PiWFU4XoaZ.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/TvJL2PiWFU4XoaZ.png"/>
 
 然后修改书籍信息 也是直接添加一个字段用于记录剩余数量:
 
-<img src="https://fast.itbaima.net/2023/03/06/WjEcGbtkNrZi1CL.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/WjEcGbtkNrZi1CL.png"/>
 
 接着我们去编写一下对应的服务吧 首先是用户服务:
 
@@ -296,15 +296,15 @@ seata 是一款开源的分布式事务解决方案 致力于提供高性能和�
 
 我们来测试一下:
 
-<img src="https://fast.itbaima.net/2023/03/06/MPkZb1dA2Khjcty.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/MPkZb1dA2Khjcty.png"/>
 
 在次尝试借阅 后台会直接报错:
 
-<img src="https://fast.itbaima.net/2023/03/06/H43Fy9z76LIvJGd.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/H43Fy9z76LIvJGd.png"/>
 
 抛出异常 但是我们发现一个问题 借阅信息添加失败了 但是图书的数量依然被-1 也就是说正常情况下 我们是希望中途出现异常之后 之前的操作全部回滚的:
 
-<img src="https://fast.itbaima.net/2023/03/06/l9D8aXBxkvnZejw.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/l9D8aXBxkvnZejw.png"/>
 
 而这里由于是在另一个服务中进行的数据库操作 所以传统的@Transactional注解无效 这时就得借助Seata提供分布式事务了
 
@@ -315,7 +315,7 @@ seata 是一款开源的分布式事务解决方案 致力于提供高性能和�
    这里的PC实际上指的是Prepare和Commit 也就是说它分为两个阶段 一个是准备一个是提交 整个过程的参与者一共有两个角色
    一个是事务的执行者 一个是事务的协调者 实际上整个分布式事务的运作都需要依靠协调性来维持:
 
-   <img src="https://fast.itbaima.net/2023/03/06/BWiUzFrjHAao1kJ.png"/>
+   <img src="https://image.itbaima.net/markdown/2023/03/06/BWiUzFrjHAao1kJ.png"/>
    
    在准备和提交阶段 会进行:
    - 准备阶段: 一个分布式事务是由协调者来开启的 首先协调者会向所有的事务执行者发送事务内容 等待所有的事务执行者答复
@@ -372,7 +372,7 @@ seata 是一款开源的分布式事务解决方案 致力于提供高性能和�
 ### Seata机制简介
 前面我们了解了一些分布式事务的解决方案 那么我们来看一下Seata是如何进行分布式事务的处理的
 
-<img src="https://fast.itbaima.net/2023/03/06/LsUq3AvrfhQJPCz.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/LsUq3AvrfhQJPCz.png"/>
 
 官网给出的是这样的一个架构图 那么图中的RM, TM, TC代表着什么意思呢?
 - RM(Transaction Coordinator): 用于直接执行本地事务的提交和回滚
@@ -394,7 +394,7 @@ Seata支持4种事务模式 官网文档: https://seata.io/zh-cn/docs/overview/w
 - XA: 同上 但是要求数据库本身支持这种模式才可以
 - Sage: 用于处理长事务 每个执行者需要实现事务的正向操作和补偿操作:
 
-<img src="https://fast.itbaima.net/2023/03/06/vLTZFS4yn26uabA.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/vLTZFS4yn26uabA.png"/>
 
 那么 以AT模式为例 我们的程序如何才能做到不对业务进行侵入的情况下实现分布式事务呢? 实际上 Seata客户端 是通过对数据源进行代理实现的
 使用的是DataSourceProxy类 所以在程序这边我们只需要将对应的代理类注册为Bean即可(0.9版本之后支持自动进行代理 不用我们主动操作)
@@ -408,7 +408,7 @@ Seata也是以服务端形式进行部署的 然后每个服务都是客户端 �
 
 下载完成之后 放入到IDEA项目目录中 添加启动配置 这里端口使用8868:
 
-<img src="https://fast.itbaima.net/2023/03/06/ykH1BSPcxlvY4on.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/ykH1BSPcxlvY4on.png"/>
 
 Seata服务端支持本地部署或是基于注册发现中心部署(比如Nacos, Eureka等) 这里我们首先演示一下最简单的本地部署 不需要对Seata的配置文件做任何修改
 
@@ -502,23 +502,23 @@ Seata存在着事务分组机制:
 
 创建完成之后 我们现在就可以启动三个服务了 我们来测试一下当出现异常的时候是不是会正常回滚:
 
-<img src="https://fast.itbaima.net/2023/03/06/NIe9QFW3jf1DdnV.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/NIe9QFW3jf1DdnV.png"/>
 
-<img src="https://fast.itbaima.net/2023/03/06/LwcdO2HuWAhFr5p.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/LwcdO2HuWAhFr5p.png"/>
 
 首先第一次肯定是正常完成借阅操作的 接着我们再次进行请求 肯定会出现异常:
 
-<img src="https://fast.itbaima.net/2023/03/06/6VOfsp9UxYJzgKD.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/6VOfsp9UxYJzgKD.png"/>
 
-<img src="https://fast.itbaima.net/2023/03/06/yEQa2qeiNc5npV9.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/yEQa2qeiNc5npV9.png"/>
 
 如果能在栈追踪信息中看到seata相关的包 那么说明分布式事务已经开始工作了 通过日志我们可以看到 出现了回滚操作:
 
-<img src="https://fast.itbaima.net/2023/03/06/VtBlx4U1TzcqKra.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/VtBlx4U1TzcqKra.png"/>
 
 并且数据库中确实是回滚了扣除操作:
 
-<img src="https://fast.itbaima.net/2023/03/06/WXn9UPgxBVhdHmb.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/WXn9UPgxBVhdHmb.png"/>
 
 这样 我们就通过Seata简单地实现了分布式事务
 
@@ -527,7 +527,7 @@ Seata存在着事务分组机制:
 
 我们先单独为Seata配置一个命名空间:
 
-<img src="https://fast.itbaima.net/2023/03/06/93mXN5dlC2GTLOW.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/93mXN5dlC2GTLOW.png"/>
 
 我们打开conf目录中的registry.conf配置文件:
 
@@ -582,17 +582,17 @@ Seata存在着事务分组机制:
 接着 我们需要将配置导入到Nacos中 我们打开一开始下载的源码script/config-center/nacos目录 这是官方提供的上传脚本
 我们直接运行即可(windows下没对应的bat就很蛋疼 可以使用git命令来运行一下) 这里我们使用这个可交互的版本:
 
-<img src="https://fast.itbaima.net/2023/03/06/1tPwBFn7u3ScCeY.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/1tPwBFn7u3ScCeY.png"/>
 
 按照提示输入就可以了 不输入就使用的默认值 不知道为啥最新版本有四个因为参数过长还导入失败了 就离谱 不过不影响
 
 导入成功之后 可以在对应的命名空间下看到对应的配置(为啥非要一个一个配置项单独搞 就不能写一起吗):
 
-<img src="https://fast.itbaima.net/2023/03/06/8yTQGZluYVe1cg2.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/8yTQGZluYVe1cg2.png"/>
 
 注意 还没完 我们还需要将对应的事务组映射配置也添加上 Datald格式为service.vgroupMapping.事务组名称 比如我们就使用默认的名称 值全部依然使用default即可:
 
-<img src="https://fast.itbaima.net/2023/03/06/UBchb4zPjHAfCSs.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/UBchb4zPjHAfCSs.png"/>
 
 下载我们就完成了服务端的Nacos配置 接着我们需要对客户端也进行Nacos配置:
 
@@ -618,19 +618,19 @@ Seata存在着事务分组机制:
 
 现在我们就可以启动这三个服务了 可以在Nacos中看到Seata以及三个服务都正常注册了:
 
-<img src="https://fast.itbaima.net/2023/03/06/PSbw5TFhm74Wu3n.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/PSbw5TFhm74Wu3n.png"/>
 
-<img src="https://fast.itbaima.net/2023/03/06/nZUcuM2kJ86zgBv.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/nZUcuM2kJ86zgBv.png"/>
 
 接着我们就可以访问一下服务试试看了:
 
-<img src="https://fast.itbaima.net/2023/03/06/Fn3R2Jrq1YyleCh.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/Fn3R2Jrq1YyleCh.png"/>
 
 可以看到效果和上面是一样的 不过现在我们的注册和配置都继承在Nacos中进行了
 
 我们还可以配置一下事务会话信息的存储方式 默认是file类型 那么就会在运行目录下创建file_store目录 我们可以将其搬到数据库中存储 只需要修改一下配置即可:
 
-<img src="https://fast.itbaima.net/2023/03/06/Cph9zPF2kaSvKdY.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/Cph9zPF2kaSvKdY.png"/>
 
 将store.session.mode和store.mode的值修改为db
 
@@ -641,7 +641,7 @@ Seata存在着事务分组机制:
 
 其他的默认即可:
 
-<img src="https://fast.itbaima.net/2023/03/06/dlmYNnARZaxJ5MH.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/dlmYNnARZaxJ5MH.png"/>
 
 接着我们需要将对应的数据库进行创建 创建seata数据库 然后直接CV以下语句:
 
@@ -717,21 +717,21 @@ Seata存在着事务分组机制:
                     INSERT INTO `distributed_lock` (lock_key, lock_value, expire) VALUES ('HandleAllSession', ' ', 0);
 ```
 
-<img src="https://fast.itbaima.net/2023/03/06/7zvewSLhFmbc8G1.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/7zvewSLhFmbc8G1.png"/>
 
 完成之后 重启Seata服务端即可:
 
-<img src="https://fast.itbaima.net/2023/03/06/G7qQoEy8DCX9bLJ.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/G7qQoEy8DCX9bLJ.png"/>
 
 看到了数据源初始化成功 现在已经在使用数据库进行会话存储了
 
 如果Seata服务端出现报错 可能是我们自定义事务组的名称太长了:
 
-<img src="https://fast.itbaima.net/2023/03/06/qoNhgzM2PXpZU9B.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/qoNhgzM2PXpZU9B.png"/>
 
 将globle_table表的字段transaction_server_group长度适当增加一下即可:
 
-<img src="https://fast.itbaima.net/2023/03/06/9LnaoUxHzlY1GdV.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/9LnaoUxHzlY1GdV.png"/>
 
 到此 关于基于nacos模式下的Seata部署 就完成了
 

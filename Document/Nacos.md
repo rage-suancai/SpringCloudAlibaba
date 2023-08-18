@@ -1,4 +1,4 @@
-<img src="https://fast.itbaima.net/2023/03/06/pQkSrLx9NZRn8Ub.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/pQkSrLx9NZRn8Ub.png"/>
 
 ### Nacos 更加全能的注册中心
 Nacos(Naming Configuration Service)是一款阿里巴巴开源的服务注册与发现, 配置管理的组件 相当于是Eureka+Config的组合形态
@@ -6,17 +6,17 @@ Nacos(Naming Configuration Service)是一款阿里巴巴开源的服务注册与
 ### 安装与部署
 Nacos服务器是独立安装部署的 因此我们需要下载最新的Nacos服务端程序 下载地址: https://github.com/alibaba/nacos
 
-<img src="https://fast.itbaima.net/2023/03/06/VStPIABaXxMp2N9.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/VStPIABaXxMp2N9.png"/>
 
 可以看到目前最新的版本是1.4.3版本(2022年2月27日发布的) 我们直接下载zip文件即可
 
 接着我们将文件进行解压 得到以下内容:
 
-<img src="https://fast.itbaima.net/2023/03/06/wWbuXRGizrQCT8J.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/wWbuXRGizrQCT8J.png"/>
 
 我们直接将其拖入到项目文件夹下 便于我们一会在IDEA内部启动 接着添加运行配置:
 
-<img src="https://fast.itbaima.net/2023/03/06/bM8doEZPth7DHfe.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/bM8doEZPth7DHfe.png"/>
 
 其中-m standalone表示单节点模式 Mac和Linux下记得将解释器设定为/bin/bash 由于Nacos在Mac/Linux默认是后台启动模式
 我们修改一下它的bash文件 让它变成前台启动 这样IDEA关闭了Nacos就自动关闭了 否则开发环境下很容易忘记关:
@@ -29,13 +29,13 @@ Nacos服务器是独立安装部署的 因此我们需要下载最新的Nacos服
 
 接着我们点击启动:
 
-<img src="https://fast.itbaima.net/2023/03/06/O3pMSvDbxPKYT5q.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/O3pMSvDbxPKYT5q.png"/>
 
 OK 启动成功 可以看到它的管理页面地址也是给我们贴出来了: http://localhost:8848/nacos/index.html 访问这个地址
 
 默认的用户名和管理员密码都是nacos 直接登陆即可 可以看到进入管理页面之后功能也是相当丰富:
 
-<img src="https://fast.itbaima.net/2023/03/06/dom3WpJsiajgCE7.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/dom3WpJsiajgCE7.png"/>
 
 至此 Nacos的安装与部署完成
 
@@ -105,11 +105,11 @@ OK 启动成功 可以看到它的管理页面地址也是给我们贴出来了:
 
 接着启动我们的图书服务 可以在Nacos的服务列表中找到:
 
-<img src="https://fast.itbaima.net/2023/03/06/9PLBGOXoaERnUwM.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/9PLBGOXoaERnUwM.png"/>
 
 按照同样的方法 我们接着将另外两个服务也注册到Nacos中:
 
-<img src="https://fast.itbaima.net/2023/03/06/K6VBtqEWSLnMp21.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/K6VBtqEWSLnMp21.png"/>
 
 接着我们使用OpenFeign 实现服务发现远程调用以及负载均衡 导入依赖:
 
@@ -187,11 +187,11 @@ OK 启动成功 可以看到它的管理页面地址也是给我们贴出来了:
 
 接着我们进行测试:
 
-<img src="https://fast.itbaima.net/2023/03/06/HIGvXAad1EOVPt6.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/HIGvXAad1EOVPt6.png"/>
 
 测试正常 可以自动发现服务 接着我们来多配置几个实例 去掉图书服务和用户服务的端口配置
 
-<img src="https://fast.itbaima.net/2023/03/06/WZGdJ5BYpmbMuNT.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/WZGdJ5BYpmbMuNT.png"/>
 
 然后我们在图书服务和用户服务中添加一句打印方便之后查看:
 
@@ -217,23 +217,23 @@ OK 启动成功 可以看到它的管理页面地址也是给我们贴出来了:
 
 现在将全部服务启动:
 
-<img src="https://fast.itbaima.net/2023/03/06/GCrm8wgWXLzYhtK.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/GCrm8wgWXLzYhtK.png"/>
 
 可以看到Nacos中的实例数量已经显示为2:
 
-<img src="https://fast.itbaima.net/2023/03/06/p6iYrPa8e1btZkl.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/p6iYrPa8e1btZkl.png"/>
 
 接着我们调用借阅服务 看看能否负载均衡远程调用:
 
-<img src="https://fast.itbaima.net/2023/03/06/jCl8RGhaIiUDBgm.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/jCl8RGhaIiUDBgm.png"/>
 
-<img src="https://fast.itbaima.net/2023/03/06/2bWdfmnVOyGzlZr.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/2bWdfmnVOyGzlZr.png"/>
 
 OK 负载均衡远程调用没有问题 这样我们就实现了基于Nacos的服务的注册与发现 实际上大致流程与Eureka一致
 
 值得注意的是 Nacos区分了临时实例和非临时实例:
 
-<img src="https://fast.itbaima.net/2023/03/06/cF5MoVX6vNnzx9j.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/cF5MoVX6vNnzx9j.png"/>
 
 那么临时和非临时有什么区别呢?
 - 临时实例: 和Eureka一样 采用心跳机制向Nacos发送请求保持在线状态 一旦心跳停止代表实例下线 不保留实例信息
@@ -255,11 +255,11 @@ OK 负载均衡远程调用没有问题 这样我们就实现了基于Nacos的�
 
 接着我们在Nacos中查看 可以发现实例已经不是临时的了:
 
-<img src="https://fast.itbaima.net/2023/03/06/FdRTjlKszDoOPU3.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/FdRTjlKszDoOPU3.png"/>
 
 如果这时我们关闭此实例 那么会变成这样:
 
-<img src="https://fast.itbaima.net/2023/03/06/R5Jyhl29UcvuOCb.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/R5Jyhl29UcvuOCb.png"/>
 
 只是将健康状态变为false 而不会删除实例的信息
 
@@ -279,11 +279,11 @@ OK 负载均衡远程调用没有问题 这样我们就实现了基于Nacos的�
 在一个分布式应用中 相同服务的实例可能会在不同的机器 位置上启动 比如我们的用户管理服务 可能在成都有一台服务器部署 重庆有一台服务器部署 而这时
 我们在成都的服务器上启动了借阅服务 那么如果我们的借阅读服务现在要调用用户服务 就应该优先选择同一个区域的用户服务进行调用 这样会使得响应速度更快
 
-<img src="https://fast.itbaima.net/2023/03/06/szyGRrEfZ1KWmpj.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/szyGRrEfZ1KWmpj.png"/>
 
 因此 我们可以对部署在不同机房的服务进行分区 可以看到实例的分区是默认:
 
-<img src="https://fast.itbaima.net/2023/03/06/wlO9dQ1NtKCxFTi.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/wlO9dQ1NtKCxFTi.png"/>
 
 我们可以直接在配置文件中进行修改:
 
@@ -303,11 +303,11 @@ OK 负载均衡远程调用没有问题 这样我们就实现了基于Nacos的�
 
 spring.cloud.nacos.discovery.cluster-name也行 这里我们将用户服务和图书服务两个区域都分配一个 借阅服务就配置为成都地区:
 
-<img src="https://fast.itbaima.net/2023/03/06/cwIhdCMmATELvlN.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/cwIhdCMmATELvlN.png"/>
 
 修改完成之后 我们来尝试重新启动一下(Nacos也要重启) 观察Nacos中集群分布情况:
 
-<img src="https://fast.itbaima.net/2023/03/06/jrYo3epaLMyQnu4.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/jrYo3epaLMyQnu4.png"/>
 
 可以看到现在有两个集群 并且都有一个实例正在运行 我们接着去调用借阅服务 但是发现并没有按照区域进行优先调用 而依然使用的是轮询模式的负载均衡调用
 
@@ -330,13 +330,13 @@ spring.cloud.nacos.discovery.cluster-name也行 这里我们将用户服务和�
 
 现在我们重启借阅服务 会发现优先调用的是同区域的用户和图书服务 现在我们可以将成都地区的服务下线:
 
-<img src="https://fast.itbaima.net/2023/03/06/s1ko9UcD4mMQ5fW.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/s1ko9UcD4mMQ5fW.png"/>
 
 可以看到 在下线之后 由于本区域内没有可用服务了 借阅服务将会调用重庆区域的用户服务
 
 除了根据区域优先调用之外 同一个区域内的实例也可以单独设置权重 Nacos会优先选择权重更大的实例进行调用 我们可以直接在管理页面中进行配置:
 
-<img src="https://fast.itbaima.net/2023/03/06/1pAckEZN5ltXKWG.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/1pAckEZN5ltXKWG.png"/>
 
 或是在配置文件中进行配置:
 
@@ -361,16 +361,16 @@ spring.cloud.nacos.discovery.cluster-name也行 这里我们将用户服务和�
 实际上我们可以在bootstrap.yaml中配置远程配置文件获取 然后再进入到配置文件加载环节 而Nacos也支持这样的操作
 使用方式也比较类似 比如我们现在想要将借阅服务的配置文件放到Nacos进行管理 那么这个时候就需要在Nacos中创建配置文件:
 
-<img src="https://fast.itbaima.net/2023/03/06/6j2pAmdfyIGz9Cu.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/6j2pAmdfyIGz9Cu.png"/>
 
 将借阅服务的配置文件全部(当然正常情况下是不会全部CV的 只会复制那些需要经常修改的部分 这里为了省事就直接全部CV了)复制过来 注意Data ID的格式跟我们之前一样
 应用名称-环境.yaml 如果只编写应用名称 那么代表此配置文件无论在什么环境下都会使用 然后每个配置文件都可以进行分组 也算是一种分类方式:
 
-<img src="https://fast.itbaima.net/2023/03/06/7ACoW3txIsjLzu2.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/7ACoW3txIsjLzu2.png"/>
 
 完成之后点击发布即可:
 
-<img src="https://fast.itbaima.net/2023/03/06/alFpWGfNejImQEw.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/alFpWGfNejImQEw.png"/>
 
 然后在项目中导入依赖:
 
@@ -406,7 +406,7 @@ spring.cloud.nacos.discovery.cluster-name也行 这里我们将用户服务和�
 
 现在我们启动服务试试看:
 
-<img src="https://fast.itbaima.net/2023/03/06/5J4FfMgtGwZhP3C.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/5J4FfMgtGwZhP3C.png"/>
 
 可以看到成功读取配置文件并启动了 实际上使用上来说跟之前的Config是基本一致的
 
@@ -429,23 +429,23 @@ Nacos还支持配置文件的热更新 比如我们在配置文件中添加了�
 
 我们修改一下配置文件 然后重启服务器:
 
-<img src="https://fast.itbaima.net/2023/03/06/9xthuBpgFs4PTSq.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/9xthuBpgFs4PTSq.png"/>
 
 可以看到已经可以正常读取了:
 
-<img src="https://fast.itbaima.net/2023/03/06/kacrSVGYMpwK2jx.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/kacrSVGYMpwK2jx.png"/>
 
 现在我们将配置文件的值进行修改:
 
-<img src="https://fast.itbaima.net/2023/03/06/YLC2H6yGoVi5z1f.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/YLC2H6yGoVi5z1f.png"/>
 
 再次访问接口 会发现没有发生变化:
 
-<img src="https://fast.itbaima.net/2023/03/06/isTaOUQwMVWGCY9.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/isTaOUQwMVWGCY9.png"/>
 
 但是后台是成功检测到值更新了 但是值却没改变:
 
-<img src="https://fast.itbaima.net/2023/03/06/dR4thB5JTk1cGjm.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/dR4thB5JTk1cGjm.png"/>
 
 那么如何才能实现配置热更新呢? 我们可以像下面这样:
 
@@ -470,15 +470,15 @@ Nacos还支持配置文件的热更新 比如我们在配置文件中添加了�
 ### 命名空间
 我们还可以将配置文件或是服务实例划分到不同的命名空间中 其实就是区分开发, 生产环境或是引用归属之类的:
 
-<img src="https://fast.itbaima.net/2023/03/06/7itUIhz3NupRdr6.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/7itUIhz3NupRdr6.png"/>
 
 这里我们创建一个新的命名空间:
 
-<img src="https://fast.itbaima.net/2023/03/06/DC2I1MvVFjYmPEq.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/DC2I1MvVFjYmPEq.png"/>
 
 可以看到在dev命名空间下 没有任何配置文件和服务:
 
-<img src="https://fast.itbaima.net/2023/03/06/Ek4APjgGcqbitNm.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/Ek4APjgGcqbitNm.png"/>
 
 我们在不同的命名空间下 实例和配置都是相互之间隔离的 我们也可以在配置文件中指定当前的命名空间
 
@@ -489,7 +489,7 @@ Nacos还支持配置文件的热更新 比如我们在配置文件中添加了�
 
 官方方案: https://nacos.io/zh-cn/docs/cluster-mode-quick-start.html
 
-<img src="https://fast.itbaima.net/2023/03/06/H1AvxOK78yspP5k.jpg"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/H1AvxOK78yspP5k.jpg"/>
 
     http://ip1:port/openAPI 直连ip模式 机器挂则需要修改ip才可以使用
     http://SLB:port/openAPI 挂载SLB模式(内网SLB 不可暴露到公网 以免带来安全风险) 直连SLB即可 下面挂server真实ip 可读性不好
@@ -507,22 +507,22 @@ Nacos还支持配置文件的热更新 比如我们在配置文件中添加了�
 
 最后就是Nacos的数据存储模式 在单节点的情况下 Nacos实际上是将数据存放在自带的一个嵌入式数据库中:
 
-<img src="https://fast.itbaima.net/2023/03/06/Fuxq9Dl3rGfnTZA.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/Fuxq9Dl3rGfnTZA.png"/>
 
 而这种模式只适用于单节点 在多节点集群模式下 肯定是不能各存各的 所以 Nacos提供了MySQL统一存储支持
 我们只需要让所有的Nacos服务器连接MySQL进行数据存储即可 官方也提供好了SQL文件
 
 现在就可以开始了 第一步 我们直接导入数据库即可 文件在conf目录中:
 
-<img src="https://fast.itbaima.net/2023/03/06/97suBpfdeF54rc2.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/97suBpfdeF54rc2.png"/>
 
 我们来将其导入到数据库 可以看到生成了很多的表:
 
-<img src="https://fast.itbaima.net/2023/03/06/cf76RJ9VUiQBlje.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/cf76RJ9VUiQBlje.png"/>
 
 然后我们来创建两个Nacos服务器 做一个迷你的集群 这里使用scp命令将nacos服务端上传到Linux服务器(注意需要提前安装好JRE8或更高版本的环境):
 
-<img src="https://fast.itbaima.net/2023/03/06/RW4JIBKVXSbG3lZ.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/RW4JIBKVXSbG3lZ.png"/>
 
 解压之后 我们对其配置文件进行修改 首先是application.properties配置文件 修改以下内容 包括MySQL服务器的信息
 
@@ -545,23 +545,23 @@ Nacos还支持配置文件的热更新 比如我们在配置文件中添加了�
 
 然后修改集群配置 这里需要重命名一下:
 
-<img src="https://fast.itbaima.net/2023/03/06/2pe51dHQsJkPVY7.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/2pe51dHQsJkPVY7.png"/>
 
 端口记得使用内网IP地址:
 
-<img src="https://fast.itbaima.net/2023/03/06/5CbEGQ7rX2StUkR.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/5CbEGQ7rX2StUkR.png"/>
 
 最后我们修改一下Nacos的内存分配以及前台启动 直接修改startup.sh文件(内存有限 玩不起高的):
 
-<img src="https://fast.itbaima.net/2023/03/06/kQF3lN24vcBqzDi.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/kQF3lN24vcBqzDi.png"/>
 
 保存之后 将nacos复制一份 并将端口修改为8802 接着启动这两个Nacos服务器
 
-<img src="https://fast.itbaima.net/2023/03/06/PQYi69aKZUXrNlJ.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/PQYi69aKZUXrNlJ.png"/>
 
 然后我们打开管理面板 可以看到两个节点都已经启动了:
 
-<img src="https://fast.itbaima.net/2023/03/06/Lbf14V39SCdghvO.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/Lbf14V39SCdghvO.png"/>
 
 这样 我们第二步就完成了 接着我们需要添加一个SLB 这里我们用Nginx做反向代理:
 
@@ -576,7 +576,7 @@ Nacos还支持配置文件的热更新 比如我们在配置文件中添加了�
 
 可以看到直接请求80端口之后得到 表示安装成功:
 
-<img src="https://fast.itbaima.net/2023/03/06/gVuMlAXcY34Ka2C.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/gVuMlAXcY34Ka2C.png"/>
 
 现在我们需要让其代理我们刚刚启动的两个Nacos服务器 我们需要对其进行一些配置 配置文件位于/etc/nginx/nginx.conf 添加以下内容:
 
@@ -598,10 +598,10 @@ Nacos还支持配置文件的热更新 比如我们在配置文件中添加了�
 
 重启Nginx服务器 成功连接:
 
-<img src="https://fast.itbaima.net/2023/03/06/2hrxcizHPvSq8be.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/2hrxcizHPvSq8be.png"/>
 
 然后我们将所有的服务全部修改为云服务器上Nacos的地址 启动试试看
 
-<img src="https://fast.itbaima.net/2023/03/06/gdh43ciamLnBRFV.png"/>
+<img src="https://image.itbaima.net/markdown/2023/03/06/gdh43ciamLnBRFV.png"/>
 
 这样 我们就搭建好了Nacos集群
